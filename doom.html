@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="color-scheme" content="dark">
+  <title>Arena Infernal · Gonx!ta Bot</title>
+  <style>
+    :root { color-scheme: dark; --red: #fb4934; --amber: #ffb000; --ink: #f7eee2; --dim: #aa9b90; }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 18px;
+      background: radial-gradient(ellipse at 50% 0, #40190f 0, #160e11 45%, #08090d 100%);
+      color: var(--ink);
+      font: 14px/1.45 ui-monospace, SFMono-Regular, Consolas, monospace;
+    }
+    .game { width: min(100%, 980px); margin: 0 auto; }
+    .top { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .mark { display: grid; width: 40px; height: 40px; place-items: center; border: 1px solid #88392b; border-radius: 12px; background: #2a1211; color: var(--red); font-size: 19px; }
+    .name { font-weight: 900; letter-spacing: .04em; }
+    .subtitle { color: var(--dim); font-size: 10px; letter-spacing: .16em; }
+    .hud { display: flex; gap: 8px; }
+    .stat { min-width: 82px; padding: 7px 10px; border: 1px solid #58302c; border-radius: 10px; background: #160f12; text-align: center; }
+    .stat span { display: block; color: var(--dim); font-size: 9px; letter-spacing: .12em; }
+    .stat strong { color: var(--amber); font-size: 16px; }
+    .screen { position: relative; overflow: hidden; border: 1px solid #78332a; border-radius: 16px; background: #050608; box-shadow: 0 22px 80px #000b, 0 0 35px #ae301a18; }
+    canvas { display: block; width: 100%; aspect-ratio: 16 / 9; image-rendering: pixelated; cursor: crosshair; touch-action: none; }
+    .overlay { position: absolute; inset: 0; display: grid; place-items: center; padding: 20px; background: #070608db; text-align: center; }
+    .overlay[hidden] { display: none; }
+    .card { width: min(420px, 100%); padding: 25px; border: 1px solid #74352a; border-radius: 16px; background: #140f12ed; box-shadow: 0 15px 65px #000b; }
+    .eyebrow { color: var(--red); font-size: 10px; font-weight: 900; letter-spacing: .25em; }
+    h1 { margin: 7px 0; color: #fff1dd; font-size: clamp(26px, 5vw, 42px); letter-spacing: -.05em; }
+    .card p { color: #c1b4a9; }
+    .start, .fire, .mobile-controls button { border: 1px solid #aa422e; border-radius: 10px; background: linear-gradient(135deg, #c73622, #721e20); color: white; font: inherit; font-weight: 900; cursor: pointer; }
+    .start { padding: 12px 20px; }
+    .controls { color: var(--dim); font-size: 11px; }
+    .toolbar { display: flex; justify-content: space-between; gap: 12px; margin-top: 10px; color: var(--dim); font-size: 11px; }
+    .mobile-controls { display: none; justify-content: space-between; align-items: end; gap: 20px; margin-top: 12px; touch-action: none; user-select: none; }
+    .pad { display: grid; grid-template-columns: repeat(3, 48px); grid-template-rows: repeat(2, 44px); gap: 5px; }
+    .pad button, .mobile-controls .turn { border: 1px solid #50404a; border-radius: 10px; background: #17141b; color: #eee; font-size: 18px; touch-action: none; }
+    .pad [data-action="forward"] { grid-column: 2; grid-row: 1; }
+    .pad [data-action="left"] { grid-column: 1; grid-row: 2; }
+    .pad [data-action="back"] { grid-column: 2; grid-row: 2; }
+    .pad [data-action="right"] { grid-column: 3; grid-row: 2; }
+    .mobile-side { display: flex; align-items: end; gap: 8px; }
+    .mobile-controls .turn { width: 44px; height: 48px; }
+    .fire { min-width: 88px; height: 52px; }
+    footer { margin-top: 13px; color: #877a75; text-align: center; font-size: 10px; }
+    @media (pointer: coarse), (max-width: 650px) {
+      body { padding: 12px 9px; }
+      .mobile-controls { display: flex; }
+      .toolbar { font-size: 9px; }
+      .stat { min-width: 67px; padding: 6px; }
+    }
+    @media (max-width: 400px) {
+      .subtitle { font-size: 8px; }
+      .hud { gap: 4px; }
+      .stat { min-width: 58px; }
+      .pad { grid-template-columns: repeat(3, 42px); }
+      .mobile-side { gap: 5px; }
+      .fire { min-width: 72px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="game">
+    <header class="top">
+      <div class="brand"><div class="mark" aria-hidden="true">✹</div><div><div class="name">GONX!TA · ARENA INFERNAL</div><div class="subtitle">MINI SHOOTER ORIGINAL · ENLACE TEMPORAL</div></div></div>
+      <div class="hud" aria-live="polite">
+        <div class="stat"><span>VIDA</span><strong id="health">100</strong></div>
+        <div class="stat"><span>BAJAS</span><strong id="kills">0/8</strong></div>
+      </div>
+    </header>
+    <section class="screen" aria-label="Arena del juego">
+      <canvas id="view" width="480" height="270" aria-label="Vista en primera persona"></canvas>
+      <div id="overlay" class="overlay">
+        <div class="card">
+          <div class="eyebrow">GONX!TA PRESENTA</div>
+          <h1 id="overlay-title">ARENA INFERNAL</h1>
+          <p id="overlay-copy">Encuentra a los 8 demonios, apunta al centro y sobrevive. Este es un minijuego original inspirado en los shooters clásicos.</p>
+          <button id="start" class="start" type="button">ENTRAR A LA ARENA</button>
+          <p class="controls">WASD mover · ← → girar · clic o espacio disparar · móvil: usa los controles</p>
+        </div>
+      </div>
+    </section>
+    <div class="toolbar"><span>Explora · apunta · sobrevive</span><span id="status">Listo para jugar</span><span>Enlace temporal · Gonx!ta</span></div>
+    <section class="mobile-controls" aria-label="Controles táctiles">
+      <div class="pad">
+        <button type="button" data-action="forward" aria-label="Avanzar">▲</button>
+        <button type="button" data-action="left" aria-label="Girar a la izquierda">◀</button>
+        <button type="button" data-action="back" aria-label="Retroceder">▼</button>
+        <button type="button" data-action="right" aria-label="Girar a la derecha">▶</button>
+      </div>
+      <div class="mobile-side">
+        <button class="turn" type="button" data-action="turnLeft" aria-label="Mirar a la izquierda">↶</button>
+        <button class="fire" id="fire" type="button">DISPARAR</button>
+        <button class="turn" type="button" data-action="turnRight" aria-label="Mirar a la derecha">↷</button>
+      </div>
+    </section>
+    <footer>Todo el juego y sus gráficos se ejecutan en tu navegador. No usa recursos externos.</footer>
+  </main>
+  <script>
+    (() => {
+      const canvas = document.querySelector('#view');
+      const ctx = canvas.getContext('2d', { alpha: false });
+      const overlay = document.querySelector('#overlay');
+      const startButton = document.querySelector('#start');
+      const healthDisplay = document.querySelector('#health');
+      const killsDisplay = document.querySelector('#kills');
+      const status = document.querySelector('#status');
+      const map = [
+        '################',
+        '#..............#',
+        '#..##..........#',
+        '#........#.....#',
+        '#........#.....#',
+        '#..#...........#',
+        '#..#..##.......#',
+        '#..............#',
+        '#.....#........#',
+        '#.....#..##....#',
+        '#..............#',
+        '#..##..........#',
+        '#...........#..#',
+        '#..............#',
+        '#..............#',
+        '################'
+      ];
+      const enemySpawns = [
+        [5.5, 2.5], [12.5, 2.5], [13.5, 5.5], [4.5, 7.5],
+        [9.5, 8.5], [12.5, 10.5], [3.5, 12.5], [8.5, 13.5]
+      ];
+      const fov = Math.PI / 3;
+      const keys = new Set();
+      const depth = new Float32Array(canvas.width);
+      const player = { x: 1.7, y: 1.7, angle: 0, health: 100 };
+      let enemies = [];
+      let kills = 0;
+      let active = false;
+      let lastTime = 0;
+      let shotAt = 0;
+      let damageAt = 0;
+      let flashUntil = 0;
+      let elapsed = 0;
+
+      function resetGame() {
+        player.x = 1.7;
+        player.y = 1.7;
+        player.angle = 0;
+        player.health = 100;
+        enemies = enemySpawns.map(([x, y], id) => ({ x, y, id, alive: true }));
+        kills = 0;
+        elapsed = 0;
+        healthDisplay.textContent = '100';
+        killsDisplay.textContent = '0/8';
+        status.textContent = 'Demonios detectados: 8';
+      }
+
+      function wallAt(x, y) {
+        const column = Math.floor(x);
+        const row = Math.floor(y);
+        return row < 0 || column < 0 || row >= map.length || column >= map[0].length || map[row][column] === '#';
+      }
+
+      function movePlayer(dx, dy) {
+        if (!wallAt(player.x + dx, player.y)) player.x += dx;
+        if (!wallAt(player.x, player.y + dy)) player.y += dy;
+      }
+
+      function castRay(angle) {
+        const dx = Math.cos(angle);
+        const dy = Math.sin(angle);
+        let distance = 0;
+        while (distance < 18) {
+          distance += 0.025;
+          if (wallAt(player.x + dx * distance, player.y + dy * distance)) break;
+        }
+        return { distance: Math.max(0.05, distance * Math.cos(angle - player.angle)), raw: distance, dx, dy };
+      }
+
+      function render() {
+        const w = canvas.width;
+        const h = canvas.height;
+        ctx.fillStyle = '#171a28';
+        ctx.fillRect(0, 0, w, h / 2);
+        ctx.fillStyle = '#211c1a';
+        ctx.fillRect(0, h / 2, w, h / 2);
+        const zBuffer = new Float32Array(w);
+        for (let x = 0; x < w; x += 2) {
+          const angle = player.angle - fov / 2 + (x / w) * fov;
+          const ray = castRay(angle);
+          const wallHeight = Math.min(h * 2, h / ray.distance);
+          const top = (h - wallHeight) / 2;
+          const side = Math.abs(ray.dx) > Math.abs(ray.dy);
+          const shade = Math.max(0.2, 1 - ray.distance / 13) * (side ? 0.76 : 1);
+          const stripe = Math.floor((player.x + ray.raw * ray.dx + player.y + ray.raw * ray.dy) * 5) % 2;
+          const red = Math.floor((stripe ? 126 : 102) * shade);
+          const green = Math.floor((stripe ? 61 : 48) * shade);
+          const blue = Math.floor((stripe ? 48 : 43) * shade);
+          ctx.fillStyle = `rgb(${red},${green},${blue})`;
+          ctx.fillRect(x, top, 2, wallHeight);
+          ctx.fillStyle = `rgba(15,9,10,${Math.min(0.42, 0.12 + ray.distance * 0.035)})`;
+          ctx.fillRect(x, top, 2, wallHeight);
+          if (Math.floor(top / 16) % 2 === 0) {
+            ctx.fillStyle = 'rgba(255,195,131,.08)';
+            ctx.fillRect(x, Math.floor(top / 16) * 16, 2, 1);
+          }
+          zBuffer[x] = ray.distance;
+          if (x + 1 < w) zBuffer[x + 1] = ray.distance;
+        }
+        drawEnemies(zBuffer);
+        drawCrosshair();
+        if (performance.now() < flashUntil) {
+          ctx.fillStyle = `rgba(255,230,180,${(flashUntil - performance.now()) / 180 * 0.42})`;
+          ctx.fillRect(0, 0, w, h);
+        }
+      }
+
+      function drawEnemies(zBuffer) {
+        const visible = enemies.filter(enemy => enemy.alive).map(enemy => {
+          const dx = enemy.x - player.x;
+          const dy = enemy.y - player.y;
+          let angle = Math.atan2(dy, dx) - player.angle;
+          while (angle > Math.PI) angle -= Math.PI * 2;
+          while (angle < -Math.PI) angle += Math.PI * 2;
+          return { enemy, distance: Math.hypot(dx, dy), angle };
+        }).filter(item => Math.abs(item.angle) < fov * 0.72 && item.distance > 0.15)
+          .sort((a, b) => b.distance - a.distance);
+
+        for (const item of visible) {
+          const screenX = Math.floor((0.5 + item.angle / fov) * canvas.width);
+          if (screenX < 0 || screenX >= canvas.width || item.distance > zBuffer[screenX]) continue;
+          const size = Math.min(canvas.height * 0.92, canvas.height / item.distance * 0.58);
+          const x = screenX - size * 0.28;
+          const y = canvas.height / 2 - size * 0.34;
+          ctx.fillStyle = '#301017';
+          ctx.fillRect(x + size * .12, y + size * .3, size * .58, size * .55);
+          ctx.fillStyle = '#8f3028';
+          ctx.fillRect(x + size * .18, y + size * .22, size * .48, size * .53);
+          ctx.fillStyle = '#c45839';
+          ctx.fillRect(x + size * .22, y + size * .12, size * .4, size * .27);
+          ctx.fillStyle = '#e6b778';
+          ctx.fillRect(x + size * .25, y + size * .19, size * .11, size * .08);
+          ctx.fillRect(x + size * .49, y + size * .19, size * .11, size * .08);
+          ctx.fillStyle = '#fef1d4';
+          ctx.fillRect(x + size * .28, y + size * .2, size * .035, size * .04);
+          ctx.fillRect(x + size * .53, y + size * .2, size * .035, size * .04);
+          ctx.fillStyle = '#382025';
+          ctx.fillRect(x + size * .28, y + size * .39, size * .34, size * .07);
+          ctx.fillStyle = '#542127';
+          ctx.fillRect(x + size * .16, y + size * .74, size * .18, size * .18);
+          ctx.fillRect(x + size * .53, y + size * .74, size * .18, size * .18);
+          if (item.distance < 2.7 && elapsed - damageAt > 1.15) {
+            player.health = Math.max(0, player.health - 8);
+            healthDisplay.textContent = String(player.health);
+            damageAt = elapsed;
+            if (player.health === 0) finishGame(false);
+          }
+        }
+      }
+
+      function drawCrosshair() {
+        const x = canvas.width / 2;
+        const y = canvas.height / 2;
+        ctx.strokeStyle = performance.now() < flashUntil ? '#fff1aa' : '#f7e9d4';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(x - 6, y); ctx.lineTo(x - 2, y);
+        ctx.moveTo(x + 2, y); ctx.lineTo(x + 6, y);
+        ctx.moveTo(x, y - 6); ctx.lineTo(x, y - 2);
+        ctx.moveTo(x, y + 2); ctx.lineTo(x, y + 6);
+        ctx.stroke();
+      }
+
+      function shoot() {
+        if (!active || elapsed - shotAt < 0.28) return;
+        shotAt = elapsed;
+        flashUntil = performance.now() + 120;
+        let target = null;
+        let targetDistance = Infinity;
+        for (const enemy of enemies) {
+          if (!enemy.alive) continue;
+          const dx = enemy.x - player.x;
+          const dy = enemy.y - player.y;
+          const distance = Math.hypot(dx, dy);
+          let difference = Math.atan2(dy, dx) - player.angle;
+          while (difference > Math.PI) difference -= Math.PI * 2;
+          while (difference < -Math.PI) difference += Math.PI * 2;
+          if (Math.abs(difference) > Math.max(0.035, 0.11 / distance)) continue;
+          if (distance > castRay(player.angle).raw - 0.25 || distance >= targetDistance) continue;
+          target = enemy;
+          targetDistance = distance;
+        }
+        if (target) {
+          target.alive = false;
+          kills++;
+          killsDisplay.textContent = `${kills}/8`;
+          status.textContent = kills === 8 ? '¡Arena despejada!' : `¡Impacto! Quedan ${8 - kills}`;
+          if (kills === 8) finishGame(true);
+        }
+      }
+
+      function finishGame(won) {
+        active = false;
+        overlay.hidden = false;
+        document.querySelector('#overlay-title').textContent = won ? '¡ARENA DESPEJADA!' : 'FIN DE LA PARTIDA';
+        document.querySelector('#overlay-copy').textContent = won
+          ? 'Eliminaste a todos los demonios. Buen trabajo, soldado.'
+          : `Conseguiste ${kills} de 8 bajas. Puedes volver a intentarlo.`;
+        startButton.textContent = won ? 'JUGAR OTRA VEZ' : 'REINTENTAR';
+        status.textContent = won ? 'Victoria' : 'Derrota';
+        if (document.pointerLockElement === canvas) document.exitPointerLock();
+      }
+
+      function loop(time) {
+        const dt = Math.min(0.05, (time - (lastTime || time)) / 1000);
+        lastTime = time;
+        if (active) {
+          elapsed += dt;
+          const speed = 2.35 * dt;
+          if (keys.has('w') || keys.has('arrowup') || keys.has('forward')) movePlayer(Math.cos(player.angle) * speed, Math.sin(player.angle) * speed);
+          if (keys.has('s') || keys.has('arrowdown') || keys.has('back')) movePlayer(-Math.cos(player.angle) * speed, -Math.sin(player.angle) * speed);
+          if (keys.has('a') || keys.has('left')) movePlayer(Math.cos(player.angle - Math.PI / 2) * speed, Math.sin(player.angle - Math.PI / 2) * speed);
+          if (keys.has('d') || keys.has('right')) movePlayer(Math.cos(player.angle + Math.PI / 2) * speed, Math.sin(player.angle + Math.PI / 2) * speed);
+          if (keys.has('arrowleft') || keys.has('turnLeft')) player.angle -= 1.8 * dt;
+          if (keys.has('arrowright') || keys.has('turnRight')) player.angle += 1.8 * dt;
+          if (keys.has(' ')) shoot();
+        }
+        render();
+        requestAnimationFrame(loop);
+      }
+
+      startButton.addEventListener('click', () => {
+        resetGame();
+        active = true;
+        overlay.hidden = true;
+        status.textContent = 'Arena activa';
+        canvas.focus();
+        if (canvas.requestPointerLock && matchMedia('(pointer: fine)').matches) {
+          canvas.requestPointerLock().catch(() => {});
+        }
+      });
+      window.addEventListener('keydown', event => {
+        const key = event.key.toLowerCase();
+        if ([' ', 'arrowup', 'arrowdown', 'arrowleft', 'arrowright'].includes(key)) event.preventDefault();
+        keys.add(key);
+        if (key === 'escape' && active && document.pointerLockElement === canvas) document.exitPointerLock();
+      });
+      window.addEventListener('keyup', event => keys.delete(event.key.toLowerCase()));
+      window.addEventListener('blur', () => keys.clear());
+      canvas.addEventListener('click', () => {
+        if (active) shoot();
+        if (active && canvas.requestPointerLock && matchMedia('(pointer: fine)').matches && document.pointerLockElement !== canvas) {
+          canvas.requestPointerLock().catch(() => {});
+        }
+      });
+      document.addEventListener('mousemove', event => {
+        if (active && document.pointerLockElement === canvas) player.angle += event.movementX * 0.003;
+      });
+      for (const button of document.querySelectorAll('[data-action]')) {
+        const action = button.dataset.action;
+        button.addEventListener('pointerdown', event => {
+          event.preventDefault();
+          button.setPointerCapture(event.pointerId);
+          keys.add(action);
+        });
+        const release = event => {
+          event.preventDefault();
+          keys.delete(action);
+        };
+        button.addEventListener('pointerup', release);
+        button.addEventListener('pointercancel', release);
+        button.addEventListener('lostpointercapture', () => keys.delete(action));
+      }
+      const fireButton = document.querySelector('#fire');
+      fireButton.addEventListener('pointerdown', event => {
+        event.preventDefault();
+        fireButton.setPointerCapture(event.pointerId);
+        shoot();
+        keys.add(' ');
+      });
+      for (const eventName of ['pointerup', 'pointercancel', 'lostpointercapture']) {
+        fireButton.addEventListener(eventName, () => keys.delete(' '));
+      }
+
+      resetGame();
+      requestAnimationFrame(loop);
+    })();
+  </script>
+</body>
+</html>

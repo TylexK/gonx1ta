@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Menú interactivo · Gonx!ta Bot</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07110f;
+      --panel: rgba(13, 23, 24, .88);
+      --panel-light: #111d20;
+      --line: rgba(190, 218, 222, .14);
+      --ink: #f2f7f7;
+      --muted: #9aabad;
+      --accent: #31d48b;
+    }
+    * { box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 18px 18px 54px;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 50% -10%, rgba(32, 161, 125, .19), transparent 40rem),
+        radial-gradient(ellipse at 7% 60%, rgba(34, 111, 93, .12), transparent 34rem),
+        var(--bg);
+      font: 14px/1.5 Inter, ui-sans-serif, system-ui, "Segoe UI", sans-serif;
+    }
+    button, input { font: inherit; }
+    button { color: inherit; }
+    .shell { max-width: 1010px; margin: auto; }
+    .topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 0 2px 16px; }
+    .brand { display: flex; align-items: center; gap: 11px; min-width: 0; }
+    .brand-avatar { width: 42px; height: 42px; border: 1px solid rgba(164, 225, 214, .34); border-radius: 13px; object-fit: cover; object-position: center 38%; }
+    .brand-name { font-size: 15px; font-weight: 850; line-height: 1.15; }
+    .brand-sub { margin-top: 3px; color: #8ea6a2; font-size: 9px; font-weight: 850; letter-spacing: .3em; }
+    .count-badge { padding: 5px 11px; border: 1px solid rgba(49, 212, 139, .27); border-radius: 999px; background: rgba(17, 127, 81, .14); color: #a4f5c9; font-size: 11px; font-weight: 800; white-space: nowrap; }
+    .hero {
+      position: relative;
+      display: flex;
+      min-height: clamp(330px, 52vw, 485px);
+      align-items: end;
+      overflow: hidden;
+      padding: clamp(18px, 3vw, 30px);
+      border: 1px solid rgba(131, 203, 185, .3);
+      border-radius: 25px;
+      background: #111b20;
+      box-shadow: 0 24px 70px #0007;
+      isolation: isolate;
+    }
+    .hero-art { position: absolute; z-index: -2; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 38%; }
+    .hero::after { position: absolute; z-index: -1; inset: 0; background: linear-gradient(180deg, rgba(2, 8, 12, .08) 8%, rgba(2, 8, 12, .12) 42%, rgba(2, 8, 12, .9) 100%); content: ""; }
+    .premium {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      padding: 5px 10px;
+      border: 1px solid rgba(211, 235, 255, .22);
+      border-radius: 999px;
+      background: rgba(5, 11, 18, .56);
+      color: #d7edeb;
+      font-size: 9px;
+      font-weight: 850;
+      letter-spacing: .14em;
+      backdrop-filter: blur(12px);
+    }
+    .hero-copy { max-width: 680px; }
+    .hero h1 { margin: 0; font-size: clamp(30px, 5vw, 44px); font-weight: 900; line-height: 1.1; letter-spacing: -.04em; text-shadow: 0 3px 20px #000c; }
+    .hero p { margin: 8px 0 0; color: #d5e0e0; font-size: 13px; text-shadow: 0 2px 14px #000; }
+    .search-panel { margin-top: 12px; padding: 9px 13px; border: 1px solid var(--line); border-radius: 14px; background: rgba(17, 22, 27, .86); }
+    .search-row { display: flex; align-items: center; gap: 10px; }
+    .search-icon { color: #82989a; font-size: 19px; }
+    #search { width: 100%; min-width: 0; padding: 6px 0; border: 0; outline: 0; background: transparent; color: var(--ink); }
+    #search::placeholder { color: #728184; }
+    #clear-search { display: grid; width: 28px; height: 28px; flex: 0 0 auto; place-items: center; border: 0; border-radius: 50%; background: #252c30; color: #c5cecf; cursor: pointer; }
+    #clear-search:hover { background: #343e41; }
+    .tabs { display: flex; gap: 7px; overflow-x: auto; padding: 10px 0 5px; scrollbar-width: thin; scrollbar-color: #3c5350 transparent; }
+    .tab {
+      --tab-color: #31d48b;
+      display: inline-flex;
+      flex: 0 0 auto;
+      align-items: center;
+      gap: 7px;
+      padding: 8px 11px;
+      border: 1px solid rgba(180, 203, 205, .14);
+      border-radius: 999px;
+      background: rgba(17, 23, 27, .87);
+      color: #aab7b9;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 750;
+      transition: border-color .16s ease, color .16s ease, background .16s ease, box-shadow .16s ease;
+    }
+    .tab:hover { border-color: color-mix(in srgb, var(--tab-color) 45%, transparent); color: #f5ffff; }
+    .tab.active { border-color: var(--tab-color); background: color-mix(in srgb, var(--tab-color) 15%, #10171b); color: #f4ffff; box-shadow: 0 0 15px color-mix(in srgb, var(--tab-color) 18%, transparent); }
+    .tab-icon { font-size: 12px; }
+    .section-heading { display: flex; align-items: center; gap: 11px; margin: 18px 0 11px; }
+    .section-icon { display: grid; width: 42px; height: 42px; flex: 0 0 auto; place-items: center; border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent); border-radius: 14px; background: color-mix(in srgb, var(--accent) 11%, #10171b); color: var(--accent); font-size: 17px; }
+    .section-heading h2 { margin: 0; font-size: 17px; font-weight: 850; }
+    .section-heading p { margin: 2px 0 0; color: var(--muted); font-size: 11px; }
+    .section-count { display: grid; min-width: 27px; height: 27px; margin-left: auto; padding: 0 7px; place-items: center; border: 1px solid color-mix(in srgb, var(--accent) 38%, transparent); border-radius: 9px; color: var(--accent); font-size: 11px; font-weight: 850; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); gap: 9px; }
+    .command {
+      --command-color: #31d48b;
+      display: flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 10px 12px;
+      border: 1px solid color-mix(in srgb, var(--command-color) 17%, transparent);
+      border-radius: 12px;
+      background: linear-gradient(120deg, color-mix(in srgb, var(--command-color) 7%, #11181c), rgba(15, 21, 25, .92));
+      text-align: left;
+      cursor: pointer;
+      transition: border-color .16s ease, transform .16s ease, background .16s ease;
+    }
+    .command:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--command-color) 58%, transparent); background: color-mix(in srgb, var(--command-color) 12%, #11181c); }
+    .command code { overflow: hidden; color: #e7eeee; font-size: 12px; font-weight: 800; text-overflow: ellipsis; white-space: nowrap; }
+    .command-arrow { color: var(--command-color); font-size: 14px; }
+    .empty { grid-column: 1 / -1; padding: 25px; border: 1px dashed var(--line); border-radius: 13px; color: var(--muted); text-align: center; }
+    .footer { margin-top: 24px; color: #7e8d8f; text-align: center; font-size: 10px; }
+    dialog { width: min(410px, calc(100% - 28px)); padding: 0; border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); border-radius: 19px; background: #10191c; color: var(--ink); box-shadow: 0 28px 100px #000c; }
+    dialog::backdrop { background: #020707bd; backdrop-filter: blur(4px); }
+    .detail { padding: 21px; }
+    .detail-label { color: var(--accent); font-size: 9px; font-weight: 850; letter-spacing: .18em; }
+    .detail h2 { margin: 7px 0; font-size: 21px; }
+    .detail p { color: #aab8ba; font-size: 13px; }
+    #detail-usage { display: block; padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: #080e10; color: var(--accent); }
+    .detail-actions { display: flex; gap: 8px; margin-top: 15px; }
+    .action { padding: 9px 13px; border: 1px solid var(--line); border-radius: 10px; background: #182326; cursor: pointer; }
+    .action.primary { border-color: color-mix(in srgb, var(--accent) 42%, transparent); background: color-mix(in srgb, var(--accent) 17%, #10191c); color: #f2ffff; }
+    @media (max-width: 560px) {
+      body { padding: 12px 10px 35px; }
+      .hero { min-height: 370px; border-radius: 19px; }
+      .hero-art { object-position: 52% 38%; }
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+      .command { min-height: 44px; padding: 9px; }
+      .command code { font-size: 11px; }
+      .tab { padding: 8px 10px; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <img class="brand-avatar" src="file:///C:/Users/Usuario/Desktop/Servidor/Gonx!ta%20Bot.png" alt="">
+        <div><div class="brand-name">Gonx!ta Bot</div><div class="brand-sub">MENÚ INTERACTIVO</div></div>
+      </div>
+      <div id="count-badge" class="count-badge"></div>
+    </header>
+    <section class="hero">
+      <img class="hero-art" src="file:///C:/Users/Usuario/Desktop/Servidor/Gonx!ta%20Bot.png" alt="">
+      <div class="premium">✦ MENÚ INTERACTIVO</div>
+      <div class="hero-copy">
+        <h1>Gonx!ta Bot</h1>
+        <p>Elige una categoría, busca o toca un comando para ver sus detalles.</p>
+      </div>
+    </section>
+    <section class="search-panel" aria-label="Buscar comandos">
+      <div class="search-row">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="search" type="search" placeholder="Buscar comando..." autocomplete="off">
+        <button id="clear-search" type="button" aria-label="Limpiar búsqueda">×</button>
+      </div>
+    </section>
+    <nav id="categories" class="tabs" aria-label="Categorías de comandos"></nav>
+    <main>
+      <div class="section-heading">
+        <div id="section-icon" class="section-icon" aria-hidden="true"></div>
+        <div><h2 id="heading"></h2><p id="description"></p></div>
+        <span id="category-count" class="section-count"></span>
+      </div>
+      <div id="commands" class="grid"></div>
+    </main>
+    <footer class="footer">Este enlace temporal expira automáticamente · Gonx!ta Bot</footer>
+  </div>
+  <dialog id="details">
+    <div class="detail">
+      <div class="detail-label">DETALLES DEL COMANDO</div>
+      <h2 id="detail-title"></h2>
+      <p id="detail-description"></p>
+      <code id="detail-usage"></code>
+      <div class="detail-actions">
+        <button id="copy-command" class="action primary" type="button">Copiar comando</button>
+        <button id="close-dialog" class="action" type="button">Cerrar</button>
+      </div>
+    </div>
+  </dialog>
+  <script>
+    const MENU_DATA = [{"name":"admin","commands":[".admin",".antibot",".antiraid",".activar_2fa",".verificar_2fa",".estadisticas_grupo",".historial_admin",".usuarios_totales",".backup",".limpiar_transacciones",".reset_user",".dar",".agg",".kick",".ban",".promote",".demote",".warn",".warns",".unwarn",".mute",".unmute",".unmutetemp",".unmuteperma",".kickall",".del",".delreg",".cmd",".inactivos",".matadero",".mataderoquitar",".limpiar",".modoadmin",".setwelcome",".setgoodbye",".goodbye",".slowmode",".apagar",".prender",".abrir",".cerrar",".invitacion",".l",".logs",".registro",".stats",".susurro",".anti",".antilink",".antiflood",".lock",".unlock",".setname",".setdesc",".setphoto",".setrules",".setprefix",".antispam",".warnlist",".clearwarns",".polladmin",".backupgroup",".restoregroup",".audit",".permissions"]},{"name":"stickers","commands":[".s",".sticker",".brat",".bratv",".wm"]},{"name":"multimedia","commands":[".voz",".musica",".play",".mp3",".playlist",".tiktok",".tt",".ig",".reel",".gif",".placas",".n",".facebook",".fb",".mediafire",".mf",".pinterest",".pin",".play2",".mp4",".twitter",".x",".ytsearch",".search",".imagen",".img",".aptoide",".apk",".drive",".gdrive",".ver",".estado",".status",".qr",".image",".youtube",".spotify",".soundcloud",".video",".audio",".foto",".wallpaper",".stickerpack",".convertir",".recortar",".comprimir",".traducir",".ocr",".textoimagen",".codigoqr"]},{"name":"games","commands":[".ppt",".tragamonedas",".slot",".dado",".moneda",".apostar",".duelo",".sorteo",".ruleta",".ruleta_colores",".blackjack",".acertijo",".respuesta",".adivinanza",".ahorcado",".letra",".trivia_batalla",".pregunta",".casino",".mayor_menor",".numero_secreto",".anagrama",".memoria",".par_impar",".guerra",".carrera",".ajedrez",".ligas",".torneo",".royale",".batalla_jefe",".flip",".lucky",".spin",".raid",".competencia",".quest",".loteria",".poker",".uno",".tresenraya",".conecta4",".batalla",".duelo_monedas",".dados",".bingo",".palabra",".sopa",".quiz",".capitales",".banderas",".matematicas",".verdadero_falso",".emojiquiz",".pelicula",".musicaquiz",".pokemon",".futbol",".supervivencia",".escape"]},{"name":"economy","commands":[".reg",".perfil",".perfildos",".nivel",".estadisticas",".regalar",".transferir",".banco",".daily",".dayli",".trabajar",".minar",".pescar",".tienda",".comprar",".inventario",".historial",".comprar_xp",".gemas",".comprar_gemas",".crear_pin",".verificar_pin",".pin",".dar",".pagar",".prestamo",".interes",".proteger",".premium",".comprar_premium",".prestigio",".favorito",".favoritos",".regalar_item",".mision",".mision_diaria",".ranking",".records",".temporada",".pociones",".usar_pocion",".tienda_premium",".titulo",".bolsa",".trabajo_especial",".regalo_sorpresa",".robar",".saldo",".depositar",".retirar",".depositos",".intercambio",".subasta",".vender",".mercado",".inflacion",".impuestos",".salario",".negocio",".empresa",".trabajadores",".recompensa",".bono",".multas",".donar",".prestamos",".boveda"]},{"name":"social","commands":[".ship",".love",".gay",".gorda",".negra",".top",".rol",".roles",".tagall",".hidetag",".afk",".meme",".joke",".piropo",".8ball",".evento",".evento_temporal",".evento_global",".efecto",".mascota",".casa",".decorar",".hazme_caso",".besame",".comparar",".boda",".divorcio",".clan",".crear_clan",".invitar_clan",".info_clan",".pelear_clan",".iniciales",".grupo_info",".reporte",".insignias",".logros",".logros_especiales",".matadero",".bio",".avatar",".cumpleaños",".edad",".compatibilidad",".amigos",".enemigos",".seguidores",".reputacion",".votar",".encuesta",".confesar",".verdad",".reto",".preguntaanonima",".frase",".horoscopo",".signo",".suerte",".tarot"]},{"name":"utility","commands":[".menu",".bot",".m",".help",".ayuda",".tips",".tutorial",".free",".reglas",".id",".myid",".misgrupos",".creador",".soporte",".ia",".iareset",".vendedor",".promocion",".ping",".sc",".unirse",".quitarme",".estado",".resumen_dia",".casa",".bot",".hora",".fecha",".clima",".pais",".moneda",".calcular",".convertir",".uuid",".contraseña",".acortar",".qrtexto",".recordatorio",".temporizador",".cronometro",".definir",".sinonimo",".traducir",".ip",".pingweb"]}];
+    const MENU_EXPIRES_AT = 1794292653203;
+    const groups = new Set([
+      '.abrir', '.cerrar', '.invitacion', '.l', '.tagall', '.hidetag', '.afk',
+      '.grupo_info', '.setwelcome', '.setgoodbye', '.goodbye', '.slowmode',
+      '.antilink', '.antiflood', '.lock', '.unlock', '.setrules', '.warn',
+      '.warns', '.unwarn', '.mute', '.unmute', '.unmutetemp', '.unmuteperma',
+      '.kick', '.ban', '.promote', '.demote', '.rol', '.roles'
+    ]);
+    const profile = new Set([
+      '.reg', '.perfil', '.perfildos', '.nivel', '.estadisticas', '.logros',
+      '.logros_especiales', '.myid', '.id', '.misgrupos', '.usuarios_totales'
+    ]);
+    const pets = new Set(['.mascota', '.casa', '.decorar']);
+    const aiCommands = new Set(['.ia', '.iareset']);
+    const nsfw = new Set(['.nsfw', '.hentai']);
+    const downloads = new Set([
+      '.tiktok', '.tt', '.ig', '.reel', '.facebook', '.fb', '.mediafire', '.mf',
+      '.pinterest', '.pin', '.mp4', '.twitter', '.x', '.ytsearch', '.search',
+      '.imagen', '.img', '.aptoide', '.apk', '.drive', '.gdrive', '.youtube',
+      '.spotify', '.soundcloud', '.video', '.foto', '.wallpaper', '.play2'
+    ]);
+    const definitions = [
+      { key: 'all', title: 'Todos', icon: '✦', color: '#34d399', description: 'Todos los comandos disponibles' },
+      { key: 'group', title: 'Grupo', icon: '♧', color: '#42d392', description: 'Herramientas para administrar tu grupo' },
+      { key: 'admin', title: 'Admin', icon: '♜', color: '#f5b942', description: 'Administración y protección del bot' },
+      { key: 'downloads', title: 'Descargas', icon: '⇩', color: '#38bdf8', description: 'Descarga contenido de tus plataformas favoritas' },
+      { key: 'ai', title: 'IA', icon: '✧', color: '#a78bfa', description: 'Asistente de inteligencia artificial' },
+      { key: 'media', title: 'Media y Voz', icon: '♫', color: '#fb7185', description: 'Música, voz, stickers e imágenes' },
+      { key: 'games', title: 'Juegos', icon: '♢', color: '#f472b6', description: 'Juegos, retos y trivias' },
+      { key: 'fun', title: 'Diversión', icon: '✿', color: '#ec4899', description: 'Interacción social y entretenimiento' },
+      { key: 'pets', title: 'Mascotas', icon: '♧', color: '#fb923c', description: 'Mascotas, casas y decoración' },
+      { key: 'economy', title: 'Economía', icon: '◇', color: '#facc15', description: 'Monedas, tienda, banco y recompensas' },
+      { key: 'profile', title: 'Perfil', icon: '♙', color: '#60a5fa', description: 'Tu cuenta, perfil y progreso' },
+      { key: 'nsfw', title: 'NSFW', icon: '18+', color: '#f43f5e', description: 'Comandos con contenido para adultos' },
+      { key: 'stickers', title: 'Stickers', icon: '✦', color: '#c084fc', description: 'Crea y personaliza stickers' },
+      { key: 'system', title: 'Sistema', icon: '⌘', color: '#94a3b8', description: 'Ayuda, utilidades y estado del bot' }
+    ];
+    const categoryFor = (command, source) => {
+      if (groups.has(command)) return 'group';
+      if (profile.has(command)) return 'profile';
+      if (pets.has(command)) return 'pets';
+      if (aiCommands.has(command)) return 'ai';
+      if (nsfw.has(command)) return 'nsfw';
+      if (source === 'admin') return 'admin';
+      if (source === 'stickers') return 'stickers';
+      if (source === 'multimedia') return downloads.has(command) ? 'downloads' : 'media';
+      if (source === 'games') return 'games';
+      if (source === 'economy') return 'economy';
+      if (source === 'social') return 'fun';
+      return 'system';
+    };
+    const byKey = new Map(definitions.map(item => [item.key, { ...item, commands: [] }]));
+    const commandMap = new Map();
+    for (const source of MENU_DATA) {
+      for (const command of source.commands) {
+        if (commandMap.has(command)) continue;
+        const key = categoryFor(command, source.name);
+        const item = { command, category: key, source: source.name };
+        commandMap.set(command, item);
+        byKey.get(key).commands.push(command);
+      }
+    }
+    const categories = definitions.filter(item => item.key !== 'all' && byKey.get(item.key).commands.length)
+      .map(item => ({ ...byKey.get(item.key), commands: [...byKey.get(item.key).commands].sort((a, b) => a.localeCompare(b, 'es')) }));
+    const allCommands = [...commandMap.values()];
+    const nav = document.querySelector('#categories');
+    const grid = document.querySelector('#commands');
+    const search = document.querySelector('#search');
+    const heading = document.querySelector('#heading');
+    const description = document.querySelector('#description');
+    const categoryCount = document.querySelector('#category-count');
+    const sectionIcon = document.querySelector('#section-icon');
+    const dialog = document.querySelector('#details');
+    let activeCategory = 'group';
+    const knownDescriptions = {
+      '.menu': 'Abre este menú interactivo de comandos.',
+      '.bot': 'Muestra información y comandos disponibles del bot.',
+      '.reg': 'Crea tu perfil para empezar a usar las funciones del bot.',
+      '.perfil': 'Consulta tu perfil y tus estadísticas.',
+      '.tienda': 'Muestra los artículos disponibles para comprar.',
+      '.comprar': 'Compra un artículo de la tienda usando su número.',
+      '.inventario': 'Muestra los artículos que tienes.',
+      '.tagall': 'Menciona a todos los participantes del grupo. Requiere permisos.',
+      '.hidetag': 'Envía un mensaje mencionando al grupo sin mostrar la lista.',
+      '.kick': 'Expulsa del grupo al usuario mencionado. Requiere permisos.',
+      '.promote': 'Promociona a un participante a administrador.',
+      '.demote': 'Quita el rol de administrador a un participante.',
+      '.musica': 'Busca y envía audio a partir de una canción o enlace.',
+      '.play': 'Busca y reproduce audio por nombre o enlace.',
+      '.ia': 'Pregunta algo al asistente de inteligencia artificial.',
+      '.qr': 'Genera un código QR a partir de un texto o enlace.',
+      '.s': 'Crea un sticker a partir de una imagen o video.',
+      '.daily': 'Reclama tu recompensa diaria.',
+      '.banco': 'Consulta tu balance y cuenta.',
+      '.afk': 'Indica que estás ausente en el grupo.'
+    };
+
+    document.querySelector('#count-badge').textContent = `${allCommands.length} comandos`;
+
+    function renderCategories() {
+      nav.replaceChildren();
+      const visibleCategories = [definitions[0], ...categories];
+      for (const category of visibleCategories) {
+        const button = document.createElement('button');
+        button.className = `tab${activeCategory === category.key ? ' active' : ''}`;
+        button.type = 'button';
+        button.style.setProperty('--tab-color', category.color);
+        const icon = document.createElement('span');
+        icon.className = 'tab-icon';
+        icon.textContent = category.icon;
+        const title = document.createElement('span');
+        title.textContent = category.title;
+        button.append(icon, title);
+        button.addEventListener('click', () => {
+          activeCategory = category.key;
+          renderCategories();
+          renderCommands();
+        });
+        nav.append(button);
+      }
+    }
+
+    function renderCommands() {
+      const query = search.value.trim().toLocaleLowerCase('es');
+      const filtered = allCommands.filter(item => {
+        const category = categories.find(candidate => candidate.key === item.category);
+        return (activeCategory === 'all' || item.category === activeCategory) &&
+          `${item.command} ${category?.title || ''}`.toLocaleLowerCase('es').includes(query);
+      });
+      const currentCategory = categories.find(category => category.key === activeCategory);
+      const selected = currentCategory || definitions[0];
+      document.documentElement.style.setProperty('--accent', selected.color);
+      heading.textContent = activeCategory === 'all' ? 'Todos los comandos' : selected.title;
+      description.textContent = activeCategory === 'all' ? 'Busca un comando o explora por categoría' : selected.description;
+      sectionIcon.textContent = selected.icon;
+      categoryCount.textContent = filtered.length;
+      grid.replaceChildren();
+      if (!filtered.length) {
+        const empty = document.createElement('div');
+        empty.className = 'empty';
+        empty.textContent = 'No encontramos comandos con esa búsqueda.';
+        grid.append(empty);
+        return;
+      }
+      for (const item of filtered) {
+        const category = categories.find(candidate => candidate.key === item.category);
+        const button = document.createElement('button');
+        button.className = 'command';
+        button.type = 'button';
+        button.style.setProperty('--command-color', category?.color || selected.color);
+        const label = document.createElement('code');
+        label.textContent = item.command;
+        const arrow = document.createElement('span');
+        arrow.className = 'command-arrow';
+        arrow.textContent = '›';
+        button.append(label, arrow);
+        button.addEventListener('click', () => showDetails(item, category));
+        grid.append(button);
+      }
+    }
+
+    function showDetails(item, category) {
+      const accent = category?.color || '#34d399';
+      dialog.style.setProperty('--accent', accent);
+      document.querySelector('#detail-title').textContent = item.command;
+      document.querySelector('#detail-description').textContent =
+        knownDescriptions[item.command] || `Comando de ${category?.title || 'Gonx!ta Bot'}. Escribe ${item.command} en el chat para utilizarlo.`;
+      document.querySelector('#detail-usage').textContent = item.command;
+      const copyButton = document.querySelector('#copy-command');
+      copyButton.textContent = 'Copiar comando';
+      dialog.showModal();
+      copyButton.onclick = async () => {
+        try {
+          await navigator.clipboard.writeText(item.command);
+          copyButton.textContent = '¡Copiado!';
+        } catch {
+          copyButton.textContent = item.command;
+        }
+      };
+    }
+    search.addEventListener('input', renderCommands);
+    document.querySelector('#clear-search').addEventListener('click', () => {
+      search.value = '';
+      renderCommands();
+      search.focus();
+    });
+    document.querySelector('#close-dialog').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
+    renderCategories();
+    renderCommands();
+  </script>
+</body>
+</html>
