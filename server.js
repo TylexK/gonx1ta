@@ -13,7 +13,6 @@ const {
   createMenuLinkStore,
   createMenuTokens
 } = require('./services/menuLinks');
-const { FEATURED_COMMANDS_BY_GROUP } = require('./services/menuFeaturedCommands');
 
 const envPath = path.join(__dirname, '.env');
 if (fs.existsSync(envPath)) {

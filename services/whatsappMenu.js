@@ -2,21 +2,23 @@ const CATEGORY_PAGE_SIZE = 7;
 const COMMAND_PAGE_SIZE = 7;
 const MAX_LIST_ROWS = 10;
 const ROW_PREFIX = 'gonxta-menu';
-const { FEATURED_MENU_COMMANDS } = require('./menuFeaturedCommands');
+const ADDITIONAL_MENU_COMMANDS = [
+    { command: '.doom', category: 'games' }
+];
 
 const MENU_CATEGORY_DEFINITIONS = [
-    { name: 'admin', title: 'Administración', icon: '♜', description: 'Administración y protección del bot' },
-    { name: 'economy', title: 'Economía', icon: '◇', description: 'Monedas, tienda, banco y recompensas' },
-    { name: 'games', title: 'Juegos', icon: '♢', description: 'Juegos, retos y trivias' },
-    { name: 'downloads', title: 'Descargas', icon: '⇩', description: 'Descarga contenido de tus plataformas favoritas' },
-    { name: 'ai', title: 'Inteligencia artificial', icon: '✧', description: 'Asistente de inteligencia artificial' },
-    { name: 'media', title: 'Música y multimedia', icon: '♫', description: 'Música, voz, stickers e imágenes' },
+    { name: 'admin', title: 'Staff y bot', icon: '♜', description: 'Control, estado y protección del bot' },
+    { name: 'economy', title: 'RPG y economía', icon: '◇', description: 'Monedas, tienda, banco y recompensas' },
+    { name: 'games', title: 'Juegos RPG', icon: '♢', description: 'Juegos, retos y trivias' },
+    { name: 'downloads', title: 'Búsquedas y descargas', icon: '⇩', description: 'Busca y descarga contenido' },
+    { name: 'ai', title: 'Inteligencia IA', icon: '✧', description: 'Asistente de inteligencia artificial' },
+    { name: 'media', title: 'Media', icon: '♫', description: 'Música, voz, imágenes y multimedia' },
     { name: 'fun', title: 'Diversión', icon: '✿', description: 'Interacción social y entretenimiento' },
     { name: 'pets', title: 'Mascotas', icon: '♧', description: 'Mascotas, casas y decoración' },
-    { name: 'profile', title: 'Perfil y usuarios', icon: '♙', description: 'Tu cuenta, perfil y progreso' },
+    { name: 'profile', title: 'Perfil', icon: '♙', description: 'Tu cuenta, perfil y progreso' },
     { name: 'stickers', title: 'Stickers', icon: '✦', description: 'Crea y personaliza stickers' },
-    { name: 'group', title: 'Grupos', icon: '♧', description: 'Herramientas para administrar tu grupo' },
-    { name: 'system', title: 'Sistema', icon: '⌘', description: 'Ayuda, utilidades y estado del bot' }
+    { name: 'group', title: 'Admins de grupo', icon: '♧', description: 'Moderación y administración del grupo' },
+    { name: 'system', title: 'Utilidades', icon: '⌘', description: 'Ayuda, herramientas y estado del bot' }
 ];
 
 const GROUP_COMMANDS = new Set([
@@ -44,6 +46,7 @@ const DOWNLOAD_COMMANDS = new Set([
 const COMMAND_DESCRIPTIONS = {
     '.menu': 'Abre el panel interactivo de comandos.',
     '.bot': 'Muestra información y comandos disponibles del bot.',
+    '.doom': 'Abre el minijuego de acción del bot.',
     '.reg': 'Crea tu perfil para empezar a usar las funciones del bot.',
     '.perfil': 'Consulta tu perfil y tus estadísticas.',
     '.tienda': 'Muestra los artículos disponibles para comprar.',
@@ -88,10 +91,14 @@ function createMenuCategories(sourceCategories) {
 
     for (const source of sourceCategories) {
         for (const command of source.commands) {
-            if (seen.has(command) || !FEATURED_MENU_COMMANDS.has(command)) continue;
+            if (seen.has(command)) continue;
             seen.add(command);
             categoriesByName.get(getMenuCategoryName(command, source.name)).commands.push(command);
         }
+    }
+    for (const { command, category } of ADDITIONAL_MENU_COMMANDS) {
+        if (seen.has(command)) continue;
+        categoriesByName.get(category).commands.push(command);
     }
 
     return categories
@@ -118,9 +125,9 @@ function createTextWhatsAppMenu(sourceCategories, url) {
     });
 
     const menuAccess = url
-        ? `🔎 Explora y busca comandos esenciales en el menú interactivo:\n${url}`
+        ? `🔎 Explora y busca comandos en el menú interactivo:\n${url}`
         : '🌐 Para abrir el menú visual, escribe .menu web.';
-    return `✨ *GONX!TA BOT · COMANDOS ESENCIALES* ✨\n\n${sections.join('\n\n')}\n\n${menuAccess}`;
+    return `✨ *GONX!TA BOT · MENÚ COMPLETO* ✨\n\n${sections.join('\n\n')}\n\n${menuAccess}`;
 }
 
 function createTextWhatsAppSearch(sourceCategories, query) {
@@ -137,7 +144,7 @@ function createTextWhatsAppSearch(sourceCategories, query) {
     });
 
     if (!results.length) {
-        return `No encontré comandos esenciales que coincidan con “${query}”. Prueba otra búsqueda o escribe .menu web para explorar el menú.`;
+        return `No encontré comandos que coincidan con “${query}”. Prueba otra búsqueda o escribe .menu web para explorar el menú.`;
     }
 
     const displayedResults = results.slice(0, 20).map(item => {
@@ -178,7 +185,7 @@ function createList(title, description, sectionTitle, rows) {
         payload: {
             title,
             description,
-            buttonText: 'Abrir menú',
+            buttonText: 'Menú completo',
             listType: 1,
             sections: [{ title: sectionTitle, rows }]
         }
@@ -192,19 +199,32 @@ function limitRowTitle(title) {
         : `${characters.slice(0, 23).join('')}…`;
 }
 
-function createWhatsAppListMessage(payload) {
+function createWhatsAppInteractiveMessage(payload) {
     return {
-        listMessage: {
-            ...payload,
-            listType: 1,
-            sections: payload.sections.map(section => ({
-                title: section.title,
-                rows: section.rows.map(row => ({
-                    title: row.title,
-                    ...(row.description ? { description: row.description } : {}),
-                    rowId: row.rowId
-                }))
-            }))
+        interactiveMessage: {
+            header: {
+                title: payload.title,
+                hasMediaAttachment: false
+            },
+            body: { text: payload.description },
+            footer: { text: 'Gonx!ta Bot' },
+            nativeFlowMessage: {
+                buttons: [{
+                    name: 'single_select',
+                    buttonParamsJson: JSON.stringify({
+                        title: payload.buttonText,
+                        sections: payload.sections.map(section => ({
+                            title: section.title,
+                            rows: section.rows.map(row => ({
+                                id: row.rowId,
+                                title: row.title,
+                                ...(row.description ? { description: row.description } : {})
+                            }))
+                        }))
+                    })
+                }],
+                messageVersion: 1
+            }
         }
     };
 }
@@ -270,8 +290,8 @@ function createCategoriesMenu(categories, page = 0) {
     });
 
     return createList(
-        'Gonx!ta Bot · Menú',
-        'Elige una categoría de comandos esenciales. Escribe .menu web para abrir la versión visual.',
+        'Gonx!ta Bot · Menú completo',
+        'Explora todas las categorías y comandos disponibles del bot.',
         `Categorías ${currentPage + 1}/${pageCount}`,
         rows
     );
@@ -320,7 +340,7 @@ function createCommandsMenu(categories, categoryIndex, page = 0) {
         : 'Todos los comandos';
     return createList(
         `Gonx!ta · ${heading}`,
-        `Página ${currentPage + 1}/${pageCount}. Toca un comando para ver cómo usarlo.`,
+        `Página ${currentPage + 1}/${pageCount}. Toca un comando para ver sus opciones.`,
         'Comandos',
         rows
     );
@@ -483,7 +503,7 @@ async function sendWhatsAppMenu({
 
     const generatedMessage = generateWAMessageFromContent(
         jid,
-        createWhatsAppListMessage(response.payload),
+        createWhatsAppInteractiveMessage(response.payload),
         {
             userJid: sock.user?.id || sock.user?.lid || jid,
             logger
@@ -495,6 +515,7 @@ async function sendWhatsAppMenu({
 
     let acknowledgementTimer;
     let fallbackSent = false;
+    let acknowledgementReceived = false;
     const cleanupAcknowledgementListeners = () => {
         clearTimeout(acknowledgementTimer);
         sock.ev?.off?.('messages.update', onMessageUpdate);
@@ -521,6 +542,7 @@ async function sendWhatsAppMenu({
 
         const status = matchingUpdate.update?.status;
         const errorCode = matchingUpdate.update?.messageStubParameters?.[0];
+        if (status >= 2 && !errorCode) acknowledgementReceived = true;
         if (errorCode || status === 0 || status >= 3) cleanupAcknowledgementListeners();
         if (errorCode || status === 0) sendTextFallback(errorCode);
     };
@@ -533,21 +555,16 @@ async function sendWhatsAppMenu({
     if (sock.ev?.on) {
         sock.ev.on('messages.update', onMessageUpdate);
         sock.ev.on('message-receipt.update', onReceiptUpdate);
-        acknowledgementTimer = setTimeout(cleanupAcknowledgementListeners, 30000);
+        acknowledgementTimer = setTimeout(() => {
+            cleanupAcknowledgementListeners();
+            if (!acknowledgementReceived) sendTextFallback();
+        }, 30000);
         acknowledgementTimer.unref?.();
     }
 
     try {
         await sock.relayMessage(jid, generatedMessage.message, {
-            messageId: generatedMessage.key.id,
-            additionalNodes: [{
-                tag: 'biz',
-                attrs: {},
-                content: [{
-                    tag: 'list',
-                    attrs: { type: 'product_list', v: '2' }
-                }]
-            }]
+            messageId: generatedMessage.key.id
         });
     } catch (error) {
         cleanupAcknowledgementListeners();
@@ -719,7 +736,7 @@ function getWhatsAppMenuExecution(categories, rowId) {
 }
 
 module.exports = {
-    createWhatsAppListMessage,
+    createWhatsAppInteractiveMessage,
     createWhatsAppMenuResponse,
     createMenuCategories,
     createWhatsAppMenuPanelMessage,

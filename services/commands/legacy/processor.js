@@ -1,9 +1,4 @@
 const { canUseCommand } = require('../../permissions');
-const { categories: menuCommandCategories } = require('../categories');
-const {
-    createTextWhatsAppMenu,
-    createTextWhatsAppSearch
-} = require('../../whatsappMenu');
 
 async function processCommands(context) {
     const {
@@ -15,8 +10,6 @@ async function processCommands(context) {
         aiService,
         aiQuestion,
         createTemporaryMenuLink,
-        sendWhatsAppMenu,
-        sendWhatsAppMenuPanel,
         args,
         acertijoActivo,
         adivinanzaActiva,
@@ -1302,66 +1295,46 @@ Potencia tu grupo con un bot completo, profesional y lleno de funciones.
             }
 
             if (command === '.menu') {
-                try {
-                    if (args[0]?.toLowerCase() === 'web') {
-                        const menuLink = await createTemporaryMenuLink();
-                        const expirationText = menuLink.expiresAt
-                            ? `\n\n⏳ Este enlace funciona hasta las ${new Date(menuLink.expiresAt).toLocaleTimeString('es', {
-                                hour: '2-digit',
-                                minute: '2-digit'
-                            })}.`
-                            : '\n\n🌐 Menú público interactivo de Gonx!ta Bot.';
-                        return await sock.sendMessage(jid, {
-                            text: `✨ *MENÚ INTERACTIVO*\n\nBusca comandos, explora las categorías y toca cualquiera para ver sus detalles:\n\n${menuLink.url}${expirationText}`
-                        });
-                    }
+                if (!isAdmin) return await sock.sendMessage(jid, { text: '❌ Solo administradores pueden ver el menú de administración.' });
 
-                    if (args[0]?.toLowerCase() === 'buscar') {
-                        const query = args.slice(1).join(' ').trim();
-                        return await sock.sendMessage(jid, {
-                            text: createTextWhatsAppSearch(menuCommandCategories, query)
-                        });
-                    }
+                const adminParticipant = participants.find(p => p.admin === 'admin' || p.admin === true);
+                const locale = getLocaleFromJid(adminParticipant?.id);
+                const now = new Date();
+                const formattedDate = now.toLocaleDateString(locale);
+                const groupSize = participants.length;
+                const adminCount = participants.filter(p => p.admin === 'admin' || p.admin === true).length;
 
-                    const menuLink = await createTemporaryMenuLink();
-                    const expirationText = menuLink.expiresAt
-                        ? `\n\n⏳ Este enlace funciona hasta las ${new Date(menuLink.expiresAt).toLocaleTimeString('es', {
-                            hour: '2-digit',
-                            minute: '2-digit'
-                        })}.`
-                        : '\n\n🌐 Menú público interactivo de Gonx!ta Bot.';
-                    if (typeof sendWhatsAppMenuPanel === 'function') {
-                        const sent = await sendWhatsAppMenuPanel({
-                            jid,
-                            sock,
-                            url: menuLink.url,
-                            expiresAt: menuLink.expiresAt
-                        });
-                        if (!sent) throw new Error('No se pudo enviar el botón del panel.');
-                    } else {
-                        await sock.sendMessage(jid, {
-                            text: `✨ *MENÚ DE GONX!TA BOT*\n\nAbre el panel visual desde este enlace:\n${menuLink.url}${expirationText}`
-                        });
-                    }
-                    if (typeof sendWhatsAppMenu === 'function') {
-                        const sent = await sendWhatsAppMenu({ jid, sock, fallbackUrl: menuLink.url });
-                        if (!sent) throw new Error('No se pudo abrir la lista de comandos.');
-                        return;
-                    }
-                    return await sock.sendMessage(jid, {
-                        text: createTextWhatsAppMenu(menuCommandCategories, menuLink.url)
-                    });
-                } catch (error) {
-                    logger.warn('No se pudo mostrar el menú de WhatsApp', { error: error.message });
-                    if (args[0]?.toLowerCase() === 'web') {
-                        return await sock.sendMessage(jid, {
-                            text: `⚠️ No pude conectar con el panel visual. Aquí tienes los comandos esenciales:\n\n${createTextWhatsAppMenu(menuCommandCategories)}`
-                        });
-                    }
-                    return await sock.sendMessage(jid, {
-                        text: `❌ No pude enviar el panel de comandos. ${error.message}\n\n${createTextWhatsAppMenu(menuCommandCategories)}`
-                    });
-                }
+                const menu = `╔══════════════════════════╗
+║ ⚡ *DYSTANY MENU* ⚡
+╚══════════════════════════╝
+✨ Usuario: @${sender.split('@')[0]}
+👥 Grupo: ${groupSize} miembros | ${adminCount} admins
+📅 ${formattedDate}
+🔋 Estado: ${isBotActiveInGroup(jid) ? 'Activo 🟢' : 'Apagado 🔴'}
+
+╭─〔 🎮 CONTROL 〕
+│ 🔴 .apagar / 🟢 .prender
+│  .menu / .bot
+╰───────────────
+
+╭─〔 🏆 SOCIAL 〕
+│ 📢 .tagall / .hidetag / .rol
+│ 💘 .love / .ship
+╰───────────────
+
+╭─〔 ⚙️ ADMIN 〕
+│ 👑 .promote / .demote
+│ ⚠️ .warn / .kick / .mute
+╰───────────────
+
+╭─〔 ✨ UTILIDAD 〕
+│ 📂 .reglas
+│ 💬 .musica
+│ 🎵 .playlist
+╰───────────────
+
+> ⚡ DYSTANY • Potencia tu grupo • Comandos listos`;
+                return await sock.sendMessage(jid, { text: menu, mentions: [sender] });
             }
 
             if (command === '.doom') {

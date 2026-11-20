@@ -39,13 +39,6 @@ const bratCommands = require('./services/commands/stickers/brat');
 const qrCommands = require('./services/commands/multimedia/qr');
 const { getPollPayload } = require('./services/commands/multimedia/forward');
 const { getCommandCategory } = require('./services/commands/categories');
-const { categories: menuCommandCategories } = require('./services/commands/categories');
-const {
-    getWhatsAppMenuExecution,
-    getWhatsAppMenuSelection,
-    sendWhatsAppMenu: sendNativeWhatsAppMenu,
-    sendWhatsAppMenuPanel: sendNativeWhatsAppMenuPanel
-} = require('./services/whatsappMenu');
 const processCommands = require('./services/commands/legacy/processor');
 const {
     createHangmanGame,
@@ -201,30 +194,6 @@ async function createTemporaryMenuLink(page = 'menu') {
         url: buildMenuUrl(origin, token),
         expiresAt: Number(token.split('.')[1])
     };
-}
-
-async function sendWhatsAppMenu({ jid, sock, selection = '', query = '', fallbackUrl = '' }) {
-    return sendNativeWhatsAppMenu({
-        categories: menuCommandCategories,
-        jid,
-        sock,
-        generateWAMessageFromContent,
-        logger,
-        selection,
-        query,
-        fallbackUrl
-    });
-}
-
-async function sendWhatsAppMenuPanel({ jid, sock, url, expiresAt = null }) {
-    return sendNativeWhatsAppMenuPanel({
-        jid,
-        sock,
-        generateWAMessageFromContent,
-        logger,
-        url,
-        expiresAt
-    });
 }
 
 async function loadBaileys() {
@@ -1879,7 +1848,7 @@ sock.ev.on('messages.upsert', async (chatUpdate) => {
 
         addToMessageCache(m);
 
-        const jid = m.key.remoteJid;
+        let jid = m.key.remoteJid;
         const sender = m.key.fromMe
             ? (m.key.participant || m.key.participantPn || sock.user?.id || sock.user?.lid || jid)
             : (m.key.participant || m.key.participantPn || jid);
@@ -1912,32 +1881,6 @@ sock.ev.on('messages.upsert', async (chatUpdate) => {
             saveDB();
         }
 
-        const menuSelection = getWhatsAppMenuSelection(m.message);
-        const selectedCommand = getWhatsAppMenuExecution(menuCommandCategories, menuSelection);
-        if (selectedCommand) {
-            messageContent = selectedCommand;
-            m.message = { conversation: selectedCommand };
-        } else if (menuSelection?.startsWith('gonxta-menu:')) {
-            botPaused = readBotState();
-            if (botPaused || (jid.endsWith('@g.us') && !isBotActiveInGroup(jid))) continue;
-            try {
-                const sent = await sendWhatsAppMenu({ jid, sock, selection: menuSelection });
-                if (!sent) {
-                    await sock.sendMessage(jid, {
-                        text: '❌ Esa opción del panel ya no es válida. Escribe .menu para abrirlo de nuevo.'
-                    });
-                }
-            } catch (error) {
-                logger.warn('No se pudo mostrar la selección del menú de WhatsApp', {
-                    error: error.message
-                });
-                await sock.sendMessage(jid, {
-                    text: '❌ No pude abrir esa opción del menú. Escribe .menu para intentarlo de nuevo.'
-                });
-            }
-            continue;
-        }
-        
         if (!m.key.fromMe && jid.endsWith('@g.us')) {
             const groupSettings = ensureGroupSettings(jid);
             const afkDetails = getAfkDetails(groupSettings.afk[sender]);
@@ -1974,29 +1917,31 @@ sock.ev.on('messages.upsert', async (chatUpdate) => {
             }
         } 7
 
-        
         if (!isCommandMessage(messageContent)) return;
 
         const [originalCommand, ...args] = messageContent.split(/\s+/);
         const command = normalizeCommand(originalCommand);
         const commandCategory = getCommandCategory(command);
+        const isMenuCommand = command === '.menu';
         const subCommand = args[0]?.toLowerCase();
         const isGroupChat = jid.endsWith('@g.us');
         const aiQuestion = command === '.ia' ? messageContent.slice(originalCommand.length).trim() : null;
         if (aiQuestion && aiQuestion.length > 1000) {
             return await sock.sendMessage(jid, { text: 'La pregunta es demasiado larga (máximo 1000 caracteres).' });
         }
-        if ((!validateUserInput(messageContent) && command !== '.ia') || !verificarCooldown(sender) || !verificarCooldownComando(sender, command)) {
+        if ((!validateUserInput(messageContent) && command !== '.ia')
+            || (!isMenuCommand && !verificarCooldown(sender))
+            || !verificarCooldownComando(sender, command)) {
             return;
         }
         let participants = [];
 
         botPaused = readBotState();
         const isOwnerBotControlCommand = isOwner(sender) && ['.prender', '.apagar'].includes(command);
-        if (jid && jid.endsWith('@g.us') && !isBotActiveInGroup(jid) && !isOwnerBotControlCommand) {
+        if (jid && jid.endsWith('@g.us') && !isBotActiveInGroup(jid) && !isOwnerBotControlCommand && !isMenuCommand) {
             return;
         }
-        if (botPaused && !(isOwner(sender) && command === '.prender')) {
+        if (botPaused && !(isOwner(sender) && command === '.prender') && !isMenuCommand) {
             return;
         }
 
@@ -2105,7 +2050,7 @@ sock.ev.on('messages.upsert', async (chatUpdate) => {
             savePanelData();
 
             
-            if (isGroupChat && command !== '.cmd') {
+            if (isGroupChat && command !== '.cmd' && !isMenuCommand) {
                 if (isCommandDisabledInGroup(jid, command)) {
                     return await sock.sendMessage(jid, { text: `❌ El comando ${command} está deshabilitado en este grupo.` });
                 }
@@ -2146,8 +2091,6 @@ sock.ev.on('messages.upsert', async (chatUpdate) => {
                 aiService,
                 aiQuestion,
                 createTemporaryMenuLink,
-                sendWhatsAppMenu,
-                sendWhatsAppMenuPanel,
                 args,
                 acertijoActivo,
                 adivinanzaActiva,
