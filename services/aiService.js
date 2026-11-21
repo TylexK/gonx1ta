@@ -187,7 +187,11 @@ async function ask(conversationId, userId, question) {
     }
 
     if (!response.ok) {
-        throw new AiServiceError('AI_UNAVAILABLE', await getProviderErrorDetails(response));
+        const details = await getProviderErrorDetails(response);
+        if (response.status === 401) {
+            throw new AiServiceError('AI_INVALID_API_KEY', details);
+        }
+        throw new AiServiceError('AI_UNAVAILABLE', details);
     }
 
     let result;
