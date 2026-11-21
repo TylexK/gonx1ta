@@ -1,0 +1,146 @@
+[
+  {
+    "user": "Administrador del panel",
+    "action": "Salir del grupo",
+    "group": "120363425219138807@g.us",
+    "date": "2026-10-24T02:08:36.128Z",
+    "result": "success",
+    "detail": "Bot salió del grupo"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Salir del grupo",
+    "group": "120363425219138807@g.us",
+    "date": "2026-10-24T02:08:40.907Z",
+    "result": "success",
+    "detail": "Bot salió del grupo"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Salir del grupo",
+    "group": "120363418507248545@g.us",
+    "date": "2026-10-24T02:08:52.412Z",
+    "result": "success",
+    "detail": "Bot salió del grupo"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Cambiar estado del grupo",
+    "group": "120363405916089835@g.us",
+    "date": "2026-10-27T03:26:08.251Z",
+    "result": "success",
+    "detail": "Activado"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Pausar bot",
+    "group": "—",
+    "date": "2026-10-27T03:26:27.526Z",
+    "result": "success",
+    "detail": "Bot pausado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Reanudar bot",
+    "group": "—",
+    "date": "2026-10-27T03:26:27.712Z",
+    "result": "success",
+    "detail": "Bot reanudado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Pausar bot",
+    "group": "—",
+    "date": "2026-10-27T03:26:30.520Z",
+    "result": "success",
+    "detail": "Bot pausado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Reanudar bot",
+    "group": "—",
+    "date": "2026-10-27T03:26:32.469Z",
+    "result": "success",
+    "detail": "Bot reanudado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Salir del grupo",
+    "group": "120363428279599700@g.us",
+    "date": "2026-10-27T03:27:21.311Z",
+    "result": "success",
+    "detail": "Bot salió del grupo"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Cambiar estado del grupo",
+    "group": "120363431173766779@g.us",
+    "date": "2026-10-27T20:34:22.164Z",
+    "result": "success",
+    "detail": "Activado"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Pausar bot",
+    "group": "—",
+    "date": "2026-11-10T05:25:04.920Z",
+    "result": "success",
+    "detail": "Bot pausado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Reanudar bot",
+    "group": "—",
+    "date": "2026-11-10T05:27:32.921Z",
+    "result": "success",
+    "detail": "Bot reanudado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Pausar bot",
+    "group": "—",
+    "date": "2026-11-10T05:31:53.984Z",
+    "result": "success",
+    "detail": "Bot pausado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Reanudar bot",
+    "group": "—",
+    "date": "2026-11-10T05:34:54.783Z",
+    "result": "success",
+    "detail": "Bot reanudado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Pausar bot",
+    "group": "—",
+    "date": "2026-11-15T02:04:13.073Z",
+    "result": "success",
+    "detail": "Bot pausado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Reanudar bot",
+    "group": "—",
+    "date": "2026-11-15T02:04:16.089Z",
+    "result": "success",
+    "detail": "Bot reanudado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Pausar bot",
+    "group": "—",
+    "date": "2026-11-15T02:08:55.270Z",
+    "result": "success",
+    "detail": "Bot pausado desde el panel"
+  },
+  {
+    "user": "Administrador del panel",
+    "action": "Reanudar bot",
+    "group": "—",
+    "date": "2026-11-15T02:08:58.287Z",
+    "result": "success",
+    "detail": "Bot reanudado desde el panel"
+  }
+]

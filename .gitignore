@@ -1,31 +1,13 @@
-node_modules/
 .env
 .env.*
 !.env.example
-*.log
-*.class
 
-# Secret WhatsApp credentials and runtime data
+# Private credentials and session data
 sesion/
 sesion_backup_*/
-downloads/
-music_downloads/
-group_audio/
-group_welcome_images/
-backups/
-database.json
-database.json.corrupt-*
-database.sqlite
-database.sqlite-shm
-database.sqlite-wal
-panel-data.json
-actividad.json
-bot-state.json
-*.tmp
-*.lock
 .panel-token
 menu.secret
-ai-usage.json
-.ai-usage.json.tmp-*
-panel-audit.json
 sticker-authors.json
+
+# Downloaded commercial music is not part of the bot source
+music_downloads/

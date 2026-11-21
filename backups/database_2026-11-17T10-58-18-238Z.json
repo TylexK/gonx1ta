@@ -1,0 +1,4642 @@
+{
+  "users": {
+    "174110072111309@lid": {
+      "nombre": "Usuario",
+      "monedas": 500,
+      "nivel": 1,
+      "xp": 10,
+      "ultimoAcceso": 1794894989590,
+      "pin": "1234",
+      "ultimoDaily": 1793239850399,
+      "stickerAuthor": "Gonza",
+      "ultimoTrabajo": 1792713244669,
+      "codigo2fa": "N1OCD8",
+      "codigo2faFecha": 1794706846426
+    },
+    "97693779116086@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1785292752477
+    },
+    "234613326770346@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1785292985837
+    },
+    "129218486767776@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1785298123593
+    },
+    "252716093829339@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1785345173326
+    },
+    "140909958180975@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1785344997985
+    },
+    "132521970950247@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "warns": 2,
+      "ultimoAcceso": 1794887800057
+    },
+    "224365501239446@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788142311442
+    },
+    "224597244928138@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788130470005
+    },
+    "198591016599749@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788557732649
+    },
+    "14934188519577@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794108306209
+    },
+    "108757698789579@lid": {
+      "nombre": "Usuario",
+      "monedas": 64,
+      "nivel": 1,
+      "xp": 10,
+      "ultimoAcceso": 1791829362772,
+      "ultimoTrabajo": 1787935833905
+    },
+    "25512139342058@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788375947804
+    },
+    "179328155406397@lid": {
+      "nombre": "Usuario",
+      "monedas": 100,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1787936015080
+    },
+    "77778099650684@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788180743966
+    },
+    "128802193707036@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1787940370567
+    },
+    "100687203561479@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788130868379
+    },
+    "157100693053512@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793936613527
+    },
+    "259124218618090@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788377940157
+    },
+    "134257120927844@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1787970866003
+    },
+    "197775392305357@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1787973525511
+    },
+    "212468307611718@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788041662358
+    },
+    "233973208862949@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788057639423
+    },
+    "230455680958699@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788057787853
+    },
+    "249219990450291@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788128320975
+    },
+    "259867130499156@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788136455073
+    },
+    "6309927735414@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788130944598
+    },
+    "256491219120205@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788183167058
+    },
+    "25285143601387@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788136606372
+    },
+    "235411653816330@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792539402046
+    },
+    "263402576461891@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788199313317
+    },
+    "253197667057678@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794286595648
+    },
+    "85409719652390@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788414938723
+    },
+    "39531449458906@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788141503595
+    },
+    "40520399192150@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788456877604
+    },
+    "49143720456441@lid": {
+      "nombre": "Usuario",
+      "monedas": 150,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788303991439
+    },
+    "70077072294020@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788304276296
+    },
+    "142121172529333@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788408658088
+    },
+    "21664083480828@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788472208403
+    },
+    "150809908125943@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788490697824
+    },
+    "129481033429245@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788494705449
+    },
+    "39956449902759@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788475229392
+    },
+    "173783017099358@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788490274949
+    },
+    "92427931148309@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788491978132
+    },
+    "235480188760271@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788491993437
+    },
+    "270716754723041@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788491467423
+    },
+    "119675438530660@lid": {
+      "nombre": "Usuario",
+      "monedas": 150000,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788491826442
+    },
+    "6821028876491@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788546893479
+    },
+    "154585201148083@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794108378996
+    },
+    "28750578233568@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788761726667
+    },
+    "195181114589281@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788761742081
+    },
+    "239320644513988@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788843602785
+    },
+    "271648880079070@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788846201398
+    },
+    "14886943883518@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788903907613
+    },
+    "220868693213433@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1788916863818
+    },
+    "202005549166727@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1789062810738
+    },
+    "201077584617531@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793938593101
+    },
+    "267164347007027@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791829550951
+    },
+    "121122389500047@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791907204522
+    },
+    "229205358985463@lid": {
+      "nombre": "Usuario",
+      "monedas": 140,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793302934334
+    },
+    "26986034557134@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793135499373
+    },
+    "112596946546734@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793135964955
+    },
+    "65683085897729@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791683609396
+    },
+    "249447959273656@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792892182411
+    },
+    "10377379229904@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792987617160
+    },
+    "103989832102036@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 10,
+      "ultimoAcceso": 1793212622864,
+      "gemas": 0,
+      "banco": 0,
+      "ultimoTrabajo": 1791771072876
+    },
+    "122647102939194@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792804397870
+    },
+    "180161026724022@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793134725088
+    },
+    "158626194939954@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791685073987
+    },
+    "22106901336125@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791688297511
+    },
+    "212919547592861@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794015537884
+    },
+    "259846058291394@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791829085553
+    },
+    "64901938716851@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791688748591
+    },
+    "36236790124666@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791754913888
+    },
+    "275006907015368@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791759894787
+    },
+    "258007711637683@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793937253565
+    },
+    "134518845477104@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791764277596
+    },
+    "193476247482594@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794879325155,
+      "stickerAuthor": "Gonza"
+    },
+    "12262903386244@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791769781624
+    },
+    "9603966349488@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792553865568
+    },
+    "248627553390620@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792367285685
+    },
+    "225013722513556@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791828164525
+    },
+    "209560799301818@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794875350799
+    },
+    "239813894602827@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791905931691
+    },
+    "157501416853581@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115349346
+    },
+    "207091058929715@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791830804026
+    },
+    "34107073532152@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791832444444
+    },
+    "179616253759686@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791852370364
+    },
+    "259751585783913@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793302046620
+    },
+    "61951044485339@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791927685717
+    },
+    "5219514978175:8@s.whatsapp.net": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791903654863
+    },
+    "174273415131389@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791908983743
+    },
+    "38612343226577@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791923675586
+    },
+    "256267998244906@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115370044
+    },
+    "30821171859690@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1791924185440
+    },
+    "154361778929771@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792718968215
+    },
+    "258540438556749@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794370968468
+    },
+    "25959453483229@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792121765294
+    },
+    "47807549440008@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792149375663
+    },
+    "5219514978175:10@s.whatsapp.net": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792159535547
+    },
+    "194446272544966@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792253515982
+    },
+    "231302024396813@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793246528162
+    },
+    "177155321401583@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794901404126
+    },
+    "139454048145576@lid": {
+      "nombre": "Usuario",
+      "monedas": 200121,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793302752719
+    },
+    "117317786722462@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792191911976
+    },
+    "57858125201599@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792192798107
+    },
+    "183167470313622@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792199702932
+    },
+    "16914436903125@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792200133631
+    },
+    "200656677773501@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792201054914
+    },
+    "251191917297841@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794087507976
+    },
+    "27376574546119@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792292681010
+    },
+    "276823694946410@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792254344308
+    },
+    "235253344014371@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792255742126
+    },
+    "56629227696235@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792288915242
+    },
+    "35210930426063@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792288737513
+    },
+    "188880397557851@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792289681007
+    },
+    "27265106722905@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792289853989
+    },
+    "257122981949497@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794679748271
+    },
+    "170708273483813@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792297229313
+    },
+    "100490054516820@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792297498444
+    },
+    "260249500016795@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793114053729
+    },
+    "173147965915348@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792319259917
+    },
+    "84602819489894@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792336991524
+    },
+    "225525243060234@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792340977640
+    },
+    "58871368409123@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792342918318
+    },
+    "142718038708310@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792342071805
+    },
+    "25199261007902@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792348935051
+    },
+    "29919446847492@lid": {
+      "nombre": "Usuario",
+      "monedas": -100,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794704323863
+    },
+    "276966099955801@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793387789479
+    },
+    "192342208282871@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792791964241
+    },
+    "7151741333708@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792457632607
+    },
+    "148047589834887@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792524085681
+    },
+    "65760999248035@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792593019436
+    },
+    "174977605234766@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792892618423
+    },
+    "96031995859143@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792630994473
+    },
+    "115496502472718@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793122584138
+    },
+    "181033374892038@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793135677612
+    },
+    "120130520510650@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792724529383
+    },
+    "117300506153209@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794286679451
+    },
+    "204904333340682@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792726446576
+    },
+    "30112435150891@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792792645985
+    },
+    "167276108091633@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792807891337
+    },
+    "143232881168493@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793204146323
+    },
+    "195056040456222@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793255198846
+    },
+    "228158024462342@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793302700259
+    },
+    "3191429161206@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792871713425
+    },
+    "201555047395389@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792875394255
+    },
+    "220723352236086@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792877204350
+    },
+    "272026552008837@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793211380454
+    },
+    "202881957380279@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792886599458
+    },
+    "121604164055104@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792892516573
+    },
+    "146364616982677@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793302587674
+    },
+    "30013298577603@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1792987688651
+    },
+    "278636036943947@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794705123297
+    },
+    "5219514978175:15@s.whatsapp.net": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793077138166
+    },
+    "236107388186748@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793188924523
+    },
+    "50650817786093@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115921661
+    },
+    "104127891820706@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793110938082
+    },
+    "195645004599378@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115405872
+    },
+    "246755048341619@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793113184432
+    },
+    "130824703856892@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793113300213
+    },
+    "3758113214543@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115375464
+    },
+    "261018617958636@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115862682
+    },
+    "93106988957878@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115833783
+    },
+    "206197403684898@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115531621
+    },
+    "43697500590247@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115534891
+    },
+    "103234337263871@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115797843
+    },
+    "45682127855815@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793115890680
+    },
+    "37044764049650@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793143074039
+    },
+    "266645159317726@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793124792644
+    },
+    "191981531705569@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793210402223
+    },
+    "170480539582525@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793129972228
+    },
+    "101353242267818@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793134677491
+    },
+    "271627187126327@lid": {
+      "nombre": "Usuario",
+      "monedas": 1e+50,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794363445301
+    },
+    "191298111803549@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793140188625
+    },
+    "1916025225342@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793559491272
+    },
+    "280603333234827@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793212952001
+    },
+    "220336821952759@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793216622302
+    },
+    "11927375847665@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793301169008
+    },
+    "134085087342658@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793240341648
+    },
+    "201318253777017@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793273921257
+    },
+    "135158963417270@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794108355855
+    },
+    "128144711389253@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793297777575
+    },
+    "169037615112193@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793299904919
+    },
+    "271356738465898@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793302034478
+    },
+    "76300865826926@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794892132922
+    },
+    "97444637483215@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793332435387
+    },
+    "66121726226607@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794108412868
+    },
+    "62681591640199@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793507508787
+    },
+    "76296554041459@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793593351146
+    },
+    "5219514978175:17@s.whatsapp.net": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793381395090
+    },
+    "66267469881510@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793576153842
+    },
+    "110913352892550@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793493011684
+    },
+    "33394125701312@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793580928408
+    },
+    "20642183262290@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793573932307
+    },
+    "196796072620176@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793574788179
+    },
+    "56475229642958@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793585698865
+    },
+    "279603142750424@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793593328214
+    },
+    "64124197306593@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1793996247037
+    },
+    "147214869520449@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794002648593
+    },
+    "252986928439357@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794003480116
+    },
+    "224803554349269@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794266571029
+    },
+    "148516110344286@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794016510588
+    },
+    "198170411823282@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794015043440
+    },
+    "179345251385558@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794016311334
+    },
+    "219503464046610@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794016569029
+    },
+    "112172466237611@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794018127264
+    },
+    "213275560157343@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794111434717
+    },
+    "7143184973896@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794074568602
+    },
+    "246836803678314@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794086833861
+    },
+    "144341771280618@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794094548107
+    },
+    "274075503046853@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794096311425
+    },
+    "45402703302808@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794271902196
+    },
+    "21303859884230@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794271913521
+    },
+    "38912940589131@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794275165053
+    },
+    "159249569161470@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794275223226
+    },
+    "5219514978175:32@s.whatsapp.net": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794283116942
+    },
+    "87510764007656@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794495337336
+    },
+    "80522701221902@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794362773675
+    },
+    "137405164179609@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794363954021
+    },
+    "266366003245208@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794370355788
+    },
+    "6949743665232@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794371960607
+    },
+    "170837055434886@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794372536354
+    },
+    "182592548671623@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794461188727
+    },
+    "196847813570796@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794630049395
+    },
+    "271507146195057@lid": {
+      "nombre": "Usuario",
+      "monedas": 0,
+      "nivel": 1,
+      "xp": 0,
+      "ultimoAcceso": 1794877192991
+    }
+  },
+  "transacciones": [
+    {
+      "tipo": "admin",
+      "origen": "174110072111309@lid",
+      "destino": "119675438530660@lid",
+      "monto": 150000,
+      "razon": "Monedas otorgadas por admin",
+      "fecha": "2026-09-04T03:18:44.164Z"
+    },
+    {
+      "tipo": "multa_robo",
+      "origen": "29919446847492@lid",
+      "destino": "sistema",
+      "monto": 50,
+      "razon": "Multa por intento fallido de robo",
+      "fecha": "2026-10-24T02:41:23.589Z"
+    },
+    {
+      "tipo": "multa_robo",
+      "origen": "29919446847492@lid",
+      "destino": "sistema",
+      "monto": 50,
+      "razon": "Multa por intento fallido de robo",
+      "fecha": "2026-10-25T18:29:51.207Z"
+    },
+    {
+      "tipo": "admin",
+      "origen": "174110072111309@lid",
+      "destino": "271627187126327@lid",
+      "monto": 1,
+      "razon": "Monedas otorgadas por admin",
+      "fecha": "2026-10-27T20:53:42.732Z"
+    },
+    {
+      "tipo": "admin",
+      "origen": "174110072111309@lid",
+      "destino": "271627187126327@lid",
+      "monto": 10000000,
+      "razon": "Monedas otorgadas por admin",
+      "fecha": "2026-10-27T20:59:48.176Z"
+    },
+    {
+      "tipo": "admin",
+      "origen": "174110072111309@lid",
+      "destino": "271627187126327@lid",
+      "monto": 1e+50,
+      "razon": "Monedas otorgadas por admin",
+      "fecha": "2026-10-27T21:01:34.165Z"
+    },
+    {
+      "tipo": "admin",
+      "origen": "271627187126327@lid",
+      "destino": "139454048145576@lid",
+      "monto": 100,
+      "razon": "Monedas otorgadas por admin",
+      "fecha": "2026-10-27T21:03:45.301Z"
+    },
+    {
+      "tipo": "admin",
+      "origen": "174110072111309@lid",
+      "destino": "271627187126327@lid",
+      "monto": 1e+50,
+      "razon": "Monedas otorgadas por admin",
+      "fecha": "2026-10-27T21:04:42.928Z"
+    },
+    {
+      "tipo": "admin",
+      "origen": "271627187126327@lid",
+      "destino": "229205358985463@lid",
+      "monto": 100,
+      "razon": "Monedas otorgadas por admin",
+      "fecha": "2026-10-27T21:08:00.243Z"
+    },
+    {
+      "tipo": "admin",
+      "origen": "271627187126327@lid",
+      "destino": "139454048145576@lid",
+      "monto": 1,
+      "razon": "Monedas otorgadas por admin",
+      "fecha": "2026-10-27T21:10:42.795Z"
+    }
+  ],
+  "antiraid": {},
+  "backups": [
+    {
+      "file": "database_2026-07-29T03-11-47-295Z.json",
+      "createdAt": 1785294707296
+    },
+    {
+      "file": "database_2026-08-27T16-05-38-311Z.json",
+      "createdAt": 1787846738314
+    },
+    {
+      "file": "database_2026-08-27T17-05-38-310Z.json",
+      "createdAt": 1787850338316
+    },
+    {
+      "file": "database_2026-08-27T18-05-38-316Z.json",
+      "createdAt": 1787853938329
+    },
+    {
+      "file": "database_2026-08-27T19-12-49-136Z.json",
+      "createdAt": 1787857969141
+    },
+    {
+      "file": "database_2026-08-27T20-12-49-136Z.json",
+      "createdAt": 1787861569137
+    },
+    {
+      "file": "database_2026-08-27T21-12-49-146Z.json",
+      "createdAt": 1787865169147
+    },
+    {
+      "file": "database_2026-08-27T22-12-49-152Z.json",
+      "createdAt": 1787868769153
+    },
+    {
+      "file": "database_2026-08-27T23-12-49-160Z.json",
+      "createdAt": 1787872369161
+    },
+    {
+      "file": "database_2026-08-28T00-12-49-171Z.json",
+      "createdAt": 1787875969172
+    },
+    {
+      "file": "database_2026-08-28T17-40-34-807Z.json",
+      "createdAt": 1787938834808
+    },
+    {
+      "file": "database_2026-08-28T18-40-34-822Z.json",
+      "createdAt": 1787942434823
+    },
+    {
+      "file": "database_2026-08-28T19-40-34-827Z.json",
+      "createdAt": 1787946034828
+    },
+    {
+      "file": "database_2026-08-28T20-40-34-841Z.json",
+      "createdAt": 1787949634842
+    },
+    {
+      "file": "database_2026-08-28T22-08-34-883Z.json",
+      "createdAt": 1787954914888
+    },
+    {
+      "file": "database_2026-08-29T00-15-20-286Z.json",
+      "createdAt": 1787962520287
+    },
+    {
+      "file": "database_2026-08-29T01-15-20-287Z.json",
+      "createdAt": 1787966120288
+    },
+    {
+      "file": "database_2026-08-29T02-15-20-297Z.json",
+      "createdAt": 1787969720300
+    },
+    {
+      "file": "database_2026-08-29T03-15-20-307Z.json",
+      "createdAt": 1787973320308
+    },
+    {
+      "file": "database_2026-08-29T04-15-20-321Z.json",
+      "createdAt": 1787976920322
+    },
+    {
+      "file": "database_2026-08-29T05-15-20-326Z.json",
+      "createdAt": 1787980520328
+    },
+    {
+      "file": "database_2026-08-29T07-39-47-363Z.json",
+      "createdAt": 1787989187364
+    },
+    {
+      "file": "database_2026-08-29T08-39-47-375Z.json",
+      "createdAt": 1787992787376
+    },
+    {
+      "file": "database_2026-08-29T09-39-47-389Z.json",
+      "createdAt": 1787996387391
+    },
+    {
+      "file": "database_2026-08-29T10-39-47-394Z.json",
+      "createdAt": 1787999987395
+    },
+    {
+      "file": "database_2026-08-29T11-39-47-401Z.json",
+      "createdAt": 1788003587402
+    },
+    {
+      "file": "database_2026-08-29T12-39-47-411Z.json",
+      "createdAt": 1788007187412
+    },
+    {
+      "file": "database_2026-08-29T13-39-47-425Z.json",
+      "createdAt": 1788010787426
+    },
+    {
+      "file": "database_2026-08-29T14-39-47-439Z.json",
+      "createdAt": 1788014387440
+    },
+    {
+      "file": "database_2026-08-29T15-39-47-445Z.json",
+      "createdAt": 1788017987447
+    },
+    {
+      "file": "database_2026-08-29T16-39-47-454Z.json",
+      "createdAt": 1788021587456
+    },
+    {
+      "file": "database_2026-08-29T17-39-47-455Z.json",
+      "createdAt": 1788025187456
+    },
+    {
+      "file": "database_2026-08-29T20-30-14-750Z.json",
+      "createdAt": 1788035414751
+    },
+    {
+      "file": "database_2026-08-29T22-12-25-867Z.json",
+      "createdAt": 1788041545868
+    },
+    {
+      "file": "database_2026-08-30T00-06-34-726Z.json",
+      "createdAt": 1788048394727
+    },
+    {
+      "file": "database_2026-08-30T01-06-34-735Z.json",
+      "createdAt": 1788051994736
+    },
+    {
+      "file": "database_2026-08-30T02-06-34-747Z.json",
+      "createdAt": 1788055594748
+    },
+    {
+      "file": "database_2026-08-30T03-06-34-752Z.json",
+      "createdAt": 1788059194753
+    },
+    {
+      "file": "database_2026-08-30T04-06-34-760Z.json",
+      "createdAt": 1788062794761
+    },
+    {
+      "file": "database_2026-08-30T05-06-34-766Z.json",
+      "createdAt": 1788066394767
+    },
+    {
+      "file": "database_2026-08-30T06-06-34-777Z.json",
+      "createdAt": 1788069994778
+    },
+    {
+      "file": "database_2026-08-30T07-06-34-794Z.json",
+      "createdAt": 1788073594796
+    },
+    {
+      "file": "database_2026-08-30T08-06-34-802Z.json",
+      "createdAt": 1788077194804
+    },
+    {
+      "file": "database_2026-08-30T09-06-34-807Z.json",
+      "createdAt": 1788080794808
+    },
+    {
+      "file": "database_2026-08-30T10-06-34-815Z.json",
+      "createdAt": 1788084394816
+    },
+    {
+      "file": "database_2026-08-30T11-06-34-820Z.json",
+      "createdAt": 1788087994821
+    },
+    {
+      "file": "database_2026-08-30T12-06-34-830Z.json",
+      "createdAt": 1788091594831
+    },
+    {
+      "file": "database_2026-08-30T13-06-34-838Z.json",
+      "createdAt": 1788095194839
+    },
+    {
+      "file": "database_2026-08-30T14-06-34-842Z.json",
+      "createdAt": 1788098794843
+    },
+    {
+      "file": "database_2026-08-30T20-18-30-080Z.json",
+      "createdAt": 1788121110082
+    },
+    {
+      "file": "database_2026-08-30T21-25-55-021Z.json",
+      "createdAt": 1788125155022
+    },
+    {
+      "file": "database_2026-08-30T22-25-55-025Z.json",
+      "createdAt": 1788128755026
+    },
+    {
+      "file": "database_2026-08-30T23-25-55-034Z.json",
+      "createdAt": 1788132355035
+    },
+    {
+      "file": "database_2026-08-31T00-25-55-039Z.json",
+      "createdAt": 1788135955040
+    },
+    {
+      "file": "database_2026-08-31T01-25-55-039Z.json",
+      "createdAt": 1788139555040
+    },
+    {
+      "file": "database_2026-08-31T02-25-55-043Z.json",
+      "createdAt": 1788143155044
+    },
+    {
+      "file": "database_2026-08-31T03-25-55-053Z.json",
+      "createdAt": 1788146755054
+    },
+    {
+      "file": "database_2026-08-31T04-25-55-064Z.json",
+      "createdAt": 1788150355065
+    },
+    {
+      "file": "database_2026-08-31T05-25-55-065Z.json",
+      "createdAt": 1788153955067
+    },
+    {
+      "file": "database_2026-08-31T06-25-55-079Z.json",
+      "createdAt": 1788157555081
+    },
+    {
+      "file": "database_2026-08-31T07-25-55-079Z.json",
+      "createdAt": 1788161155081
+    },
+    {
+      "file": "database_2026-08-31T08-25-55-093Z.json",
+      "createdAt": 1788164755094
+    },
+    {
+      "file": "database_2026-08-31T09-25-55-106Z.json",
+      "createdAt": 1788168355107
+    },
+    {
+      "file": "database_2026-08-31T10-25-55-106Z.json",
+      "createdAt": 1788171955107
+    },
+    {
+      "file": "database_2026-08-31T11-25-55-116Z.json",
+      "createdAt": 1788175555117
+    },
+    {
+      "file": "database_2026-08-31T12-25-55-131Z.json",
+      "createdAt": 1788179155133
+    },
+    {
+      "file": "database_2026-08-31T13-25-55-137Z.json",
+      "createdAt": 1788182755138
+    },
+    {
+      "file": "database_2026-08-31T14-25-55-152Z.json",
+      "createdAt": 1788186355153
+    },
+    {
+      "file": "database_2026-08-31T15-25-55-164Z.json",
+      "createdAt": 1788189955165
+    },
+    {
+      "file": "database_2026-08-31T16-25-55-177Z.json",
+      "createdAt": 1788193555179
+    },
+    {
+      "file": "database_2026-08-31T17-25-55-168Z.json",
+      "createdAt": 1788197155169
+    },
+    {
+      "file": "database_2026-08-31T18-25-55-178Z.json",
+      "createdAt": 1788200755180
+    },
+    {
+      "file": "database_2026-08-31T19-25-55-178Z.json",
+      "createdAt": 1788204355179
+    },
+    {
+      "file": "database_2026-08-31T20-25-55-179Z.json",
+      "createdAt": 1788207955180
+    },
+    {
+      "file": "database_2026-08-31T21-25-55-187Z.json",
+      "createdAt": 1788211555194
+    },
+    {
+      "file": "database_2026-08-31T22-25-55-189Z.json",
+      "createdAt": 1788215155190
+    },
+    {
+      "file": "database_2026-08-31T23-25-55-191Z.json",
+      "createdAt": 1788218755193
+    },
+    {
+      "file": "database_2026-09-01T00-25-55-192Z.json",
+      "createdAt": 1788222355194
+    },
+    {
+      "file": "database_2026-09-01T01-25-55-202Z.json",
+      "createdAt": 1788225955203
+    },
+    {
+      "file": "database_2026-09-01T02-25-55-206Z.json",
+      "createdAt": 1788229555207
+    },
+    {
+      "file": "database_2026-09-01T03-25-55-217Z.json",
+      "createdAt": 1788233155220
+    },
+    {
+      "file": "database_2026-09-01T12-09-14-740Z.json",
+      "createdAt": 1788264554743
+    },
+    {
+      "file": "database_2026-09-01T18-07-55-117Z.json",
+      "createdAt": 1788286075119
+    },
+    {
+      "file": "database_2026-09-01T19-07-55-126Z.json",
+      "createdAt": 1788289675127
+    },
+    {
+      "file": "database_2026-09-01T20-07-55-139Z.json",
+      "createdAt": 1788293275140
+    },
+    {
+      "file": "database_2026-09-01T21-42-46-283Z.json",
+      "createdAt": 1788298966290
+    },
+    {
+      "file": "database_2026-09-01T22-42-46-274Z.json",
+      "createdAt": 1788302566281
+    },
+    {
+      "file": "database_2026-09-01T23-42-46-279Z.json",
+      "createdAt": 1788306166281
+    },
+    {
+      "file": "database_2026-09-02T00-42-46-291Z.json",
+      "createdAt": 1788309766298
+    },
+    {
+      "file": "database_2026-09-02T05-36-46-630Z.json",
+      "createdAt": 1788327406632
+    },
+    {
+      "file": "database_2026-09-02T06-36-46-642Z.json",
+      "createdAt": 1788331006644
+    },
+    {
+      "file": "database_2026-09-02T07-36-46-653Z.json",
+      "createdAt": 1788334606655
+    },
+    {
+      "file": "database_2026-09-02T08-36-46-667Z.json",
+      "createdAt": 1788338206669
+    },
+    {
+      "file": "database_2026-09-02T09-36-46-678Z.json",
+      "createdAt": 1788341806680
+    },
+    {
+      "file": "database_2026-09-02T10-36-46-691Z.json",
+      "createdAt": 1788345406692
+    },
+    {
+      "file": "database_2026-09-02T11-36-46-700Z.json",
+      "createdAt": 1788349006701
+    },
+    {
+      "file": "database_2026-09-02T12-36-46-716Z.json",
+      "createdAt": 1788352606732
+    },
+    {
+      "file": "database_2026-09-02T13-36-46-721Z.json",
+      "createdAt": 1788356206722
+    },
+    {
+      "file": "database_2026-09-02T14-36-46-731Z.json",
+      "createdAt": 1788359806732
+    },
+    {
+      "file": "database_2026-09-02T15-36-46-735Z.json",
+      "createdAt": 1788363406738
+    },
+    {
+      "file": "database_2026-09-02T16-36-46-739Z.json",
+      "createdAt": 1788367006740
+    },
+    {
+      "file": "database_2026-09-02T17-36-48-837Z.json",
+      "createdAt": 1788370608854
+    },
+    {
+      "file": "database_2026-09-02T18-36-48-845Z.json",
+      "createdAt": 1788374208846
+    },
+    {
+      "file": "database_2026-09-02T19-36-48-848Z.json",
+      "createdAt": 1788377808850
+    },
+    {
+      "file": "database_2026-09-02T20-36-48-850Z.json",
+      "createdAt": 1788381408852
+    },
+    {
+      "file": "database_2026-09-02T21-36-48-861Z.json",
+      "createdAt": 1788385008862
+    },
+    {
+      "file": "database_2026-09-03T01-42-34-593Z.json",
+      "createdAt": 1788399754595
+    },
+    {
+      "file": "database_2026-09-03T02-43-12-604Z.json",
+      "createdAt": 1788403392605
+    },
+    {
+      "file": "database_2026-09-03T03-43-12-612Z.json",
+      "createdAt": 1788406992616
+    },
+    {
+      "file": "database_2026-09-03T04-43-12-613Z.json",
+      "createdAt": 1788410592614
+    },
+    {
+      "file": "database_2026-09-03T05-43-12-621Z.json",
+      "createdAt": 1788414192622
+    },
+    {
+      "file": "database_2026-09-03T06-43-12-635Z.json",
+      "createdAt": 1788417792637
+    },
+    {
+      "file": "database_2026-09-03T07-43-12-644Z.json",
+      "createdAt": 1788421392646
+    },
+    {
+      "file": "database_2026-09-03T08-43-12-654Z.json",
+      "createdAt": 1788424992655
+    },
+    {
+      "file": "database_2026-09-03T09-43-12-669Z.json",
+      "createdAt": 1788428592670
+    },
+    {
+      "file": "database_2026-09-03T10-43-12-684Z.json",
+      "createdAt": 1788432192686
+    },
+    {
+      "file": "database_2026-09-03T11-43-12-696Z.json",
+      "createdAt": 1788435792697
+    },
+    {
+      "file": "database_2026-09-03T12-43-12-695Z.json",
+      "createdAt": 1788439392697
+    },
+    {
+      "file": "database_2026-09-03T13-43-12-695Z.json",
+      "createdAt": 1788442992697
+    },
+    {
+      "file": "database_2026-09-03T14-43-12-696Z.json",
+      "createdAt": 1788446592698
+    },
+    {
+      "file": "database_2026-09-03T15-43-12-696Z.json",
+      "createdAt": 1788450192697
+    },
+    {
+      "file": "database_2026-09-03T16-43-12-697Z.json",
+      "createdAt": 1788453792699
+    },
+    {
+      "file": "database_2026-09-03T17-43-12-698Z.json",
+      "createdAt": 1788457392699
+    },
+    {
+      "file": "database_2026-09-03T18-43-12-699Z.json",
+      "createdAt": 1788460992700
+    },
+    {
+      "file": "database_2026-09-03T19-43-12-699Z.json",
+      "createdAt": 1788464592700
+    },
+    {
+      "file": "database_2026-09-03T20-43-12-704Z.json",
+      "createdAt": 1788468192705
+    },
+    {
+      "file": "database_2026-09-03T21-43-12-713Z.json",
+      "createdAt": 1788471792714
+    },
+    {
+      "file": "database_2026-09-03T22-43-12-728Z.json",
+      "createdAt": 1788475392729
+    },
+    {
+      "file": "database_2026-09-03T23-43-12-736Z.json",
+      "createdAt": 1788478992737
+    },
+    {
+      "file": "database_2026-09-04T00-43-12-750Z.json",
+      "createdAt": 1788482592751
+    },
+    {
+      "file": "database_2026-09-04T01-43-12-759Z.json",
+      "createdAt": 1788486192761
+    },
+    {
+      "file": "database_2026-09-04T02-43-12-765Z.json",
+      "createdAt": 1788489792767
+    },
+    {
+      "file": "database_2026-09-04T03-43-12-767Z.json",
+      "createdAt": 1788493392768
+    },
+    {
+      "file": "database_2026-09-04T04-43-12-781Z.json",
+      "createdAt": 1788496992782
+    },
+    {
+      "file": "database_2026-09-04T05-43-12-787Z.json",
+      "createdAt": 1788500592789
+    },
+    {
+      "file": "database_2026-09-04T06-43-12-791Z.json",
+      "createdAt": 1788504192793
+    },
+    {
+      "file": "database_2026-09-04T07-43-12-801Z.json",
+      "createdAt": 1788507792802
+    },
+    {
+      "file": "database_2026-09-04T08-43-12-812Z.json",
+      "createdAt": 1788511392813
+    },
+    {
+      "file": "database_2026-09-04T09-43-12-818Z.json",
+      "createdAt": 1788514992819
+    },
+    {
+      "file": "database_2026-09-04T10-43-12-830Z.json",
+      "createdAt": 1788518592832
+    },
+    {
+      "file": "database_2026-09-04T11-43-12-841Z.json",
+      "createdAt": 1788522192843
+    },
+    {
+      "file": "database_2026-09-04T15-26-02-698Z.json",
+      "createdAt": 1788535562699
+    },
+    {
+      "file": "database_2026-09-04T17-10-27-891Z.json",
+      "createdAt": 1788541827892
+    },
+    {
+      "file": "database_2026-09-04T18-10-29-610Z.json",
+      "createdAt": 1788545429612
+    },
+    {
+      "file": "database_2026-09-04T19-10-29-618Z.json",
+      "createdAt": 1788549029619
+    },
+    {
+      "file": "database_2026-09-04T20-10-29-633Z.json",
+      "createdAt": 1788552629634
+    },
+    {
+      "file": "database_2026-09-04T21-10-29-639Z.json",
+      "createdAt": 1788556229640
+    },
+    {
+      "file": "database_2026-09-04T23-07-58-589Z.json",
+      "createdAt": 1788563278590
+    },
+    {
+      "file": "database_2026-09-05T00-07-58-602Z.json",
+      "createdAt": 1788566878604
+    },
+    {
+      "file": "database_2026-09-05T01-07-58-602Z.json",
+      "createdAt": 1788570478605
+    },
+    {
+      "file": "database_2026-09-05T02-23-39-603Z.json",
+      "createdAt": 1788575019604
+    },
+    {
+      "file": "database_2026-09-05T03-23-39-611Z.json",
+      "createdAt": 1788578619612
+    },
+    {
+      "file": "database_2026-09-05T04-23-39-618Z.json",
+      "createdAt": 1788582219619
+    },
+    {
+      "file": "database_2026-09-05T05-23-39-632Z.json",
+      "createdAt": 1788585819633
+    },
+    {
+      "file": "database_2026-09-05T06-23-39-637Z.json",
+      "createdAt": 1788589419638
+    },
+    {
+      "file": "database_2026-09-05T07-23-39-642Z.json",
+      "createdAt": 1788593019644
+    },
+    {
+      "file": "database_2026-09-05T08-23-39-671Z.json",
+      "createdAt": 1788596619674
+    },
+    {
+      "file": "database_2026-09-05T09-23-39-676Z.json",
+      "createdAt": 1788600219677
+    },
+    {
+      "file": "database_2026-09-05T10-23-39-676Z.json",
+      "createdAt": 1788603819678
+    },
+    {
+      "file": "database_2026-09-07T07-27-05-714Z.json",
+      "createdAt": 1788766025719
+    },
+    {
+      "file": "database_2026-09-07T15-43-17-097Z.json",
+      "createdAt": 1788795797100
+    },
+    {
+      "file": "database_2026-09-07T16-43-17-102Z.json",
+      "createdAt": 1788799397105
+    },
+    {
+      "file": "database_2026-09-07T17-43-17-111Z.json",
+      "createdAt": 1788802997114
+    },
+    {
+      "file": "database_2026-09-07T18-43-19-292Z.json",
+      "createdAt": 1788806599348
+    },
+    {
+      "file": "database_2026-09-07T19-43-19-286Z.json",
+      "createdAt": 1788810199300
+    },
+    {
+      "file": "database_2026-09-07T20-43-19-296Z.json",
+      "createdAt": 1788813799299
+    },
+    {
+      "file": "database_2026-09-07T21-58-30-045Z.json",
+      "createdAt": 1788818310050
+    },
+    {
+      "file": "database_2026-09-08T03-35-42-146Z.json",
+      "createdAt": 1788838542150
+    },
+    {
+      "file": "database_2026-09-08T04-35-42-161Z.json",
+      "createdAt": 1788842142164
+    },
+    {
+      "file": "database_2026-09-08T05-35-42-171Z.json",
+      "createdAt": 1788845742174
+    },
+    {
+      "file": "database_2026-09-08T06-35-42-182Z.json",
+      "createdAt": 1788849342185
+    },
+    {
+      "file": "database_2026-09-08T07-35-42-189Z.json",
+      "createdAt": 1788852942192
+    },
+    {
+      "file": "database_2026-09-08T08-35-42-203Z.json",
+      "createdAt": 1788856542206
+    },
+    {
+      "file": "database_2026-09-08T09-35-42-217Z.json",
+      "createdAt": 1788860142221
+    },
+    {
+      "file": "database_2026-09-08T10-35-42-223Z.json",
+      "createdAt": 1788863742227
+    },
+    {
+      "file": "database_2026-09-08T11-35-42-223Z.json",
+      "createdAt": 1788867342227
+    },
+    {
+      "file": "database_2026-09-08T12-35-42-223Z.json",
+      "createdAt": 1788870942228
+    },
+    {
+      "file": "database_2026-09-08T13-35-42-241Z.json",
+      "createdAt": 1788874542293
+    },
+    {
+      "file": "database_2026-09-08T14-35-42-224Z.json",
+      "createdAt": 1788878142230
+    },
+    {
+      "file": "database_2026-09-08T15-35-42-225Z.json",
+      "createdAt": 1788881742228
+    },
+    {
+      "file": "database_2026-09-08T16-35-42-225Z.json",
+      "createdAt": 1788885342230
+    },
+    {
+      "file": "database_2026-09-08T17-35-44-017Z.json",
+      "createdAt": 1788888944022
+    },
+    {
+      "file": "database_2026-09-08T18-35-44-024Z.json",
+      "createdAt": 1788892544028
+    },
+    {
+      "file": "database_2026-09-08T19-35-44-032Z.json",
+      "createdAt": 1788896144035
+    },
+    {
+      "file": "database_2026-09-08T20-35-44-045Z.json",
+      "createdAt": 1788899744048
+    },
+    {
+      "file": "database_2026-09-08T21-35-44-045Z.json",
+      "createdAt": 1788903344048
+    },
+    {
+      "file": "database_2026-09-08T22-35-44-051Z.json",
+      "createdAt": 1788906944054
+    },
+    {
+      "file": "database_2026-09-08T23-35-44-064Z.json",
+      "createdAt": 1788910544067
+    },
+    {
+      "file": "database_2026-09-09T00-51-59-054Z.json",
+      "createdAt": 1788915119058
+    },
+    {
+      "file": "database_2026-09-09T02-51-53-135Z.json",
+      "createdAt": 1788922313140
+    },
+    {
+      "file": "database_2026-09-09T03-51-53-136Z.json",
+      "createdAt": 1788925913139
+    },
+    {
+      "file": "database_2026-09-09T04-51-53-137Z.json",
+      "createdAt": 1788929513140
+    },
+    {
+      "file": "database_2026-09-09T05-51-53-139Z.json",
+      "createdAt": 1788933113143
+    },
+    {
+      "file": "database_2026-09-09T06-51-53-142Z.json",
+      "createdAt": 1788936713146
+    },
+    {
+      "file": "database_2026-09-09T07-51-53-145Z.json",
+      "createdAt": 1788940313148
+    },
+    {
+      "file": "database_2026-09-09T08-51-53-156Z.json",
+      "createdAt": 1788943913160
+    },
+    {
+      "file": "database_2026-09-09T09-51-53-170Z.json",
+      "createdAt": 1788947513173
+    },
+    {
+      "file": "database_2026-09-09T10-51-53-171Z.json",
+      "createdAt": 1788951113175
+    },
+    {
+      "file": "database_2026-09-09T11-51-53-172Z.json",
+      "createdAt": 1788954713176
+    },
+    {
+      "file": "database_2026-09-09T12-51-53-185Z.json",
+      "createdAt": 1788958313220
+    },
+    {
+      "file": "database_2026-09-09T13-51-53-175Z.json",
+      "createdAt": 1788961913179
+    },
+    {
+      "file": "database_2026-09-09T14-51-53-176Z.json",
+      "createdAt": 1788965513182
+    },
+    {
+      "file": "database_2026-09-09T15-51-53-180Z.json",
+      "createdAt": 1788969113185
+    },
+    {
+      "file": "database_2026-09-09T16-51-53-178Z.json",
+      "createdAt": 1788972713182
+    },
+    {
+      "file": "database_2026-09-10T04-49-34-539Z.json",
+      "createdAt": 1789015774543
+    },
+    {
+      "file": "database_2026-09-10T05-49-34-548Z.json",
+      "createdAt": 1789019374552
+    },
+    {
+      "file": "database_2026-09-10T06-49-34-558Z.json",
+      "createdAt": 1789022974562
+    },
+    {
+      "file": "database_2026-09-10T07-49-34-566Z.json",
+      "createdAt": 1789026574569
+    },
+    {
+      "file": "database_2026-09-10T08-49-34-577Z.json",
+      "createdAt": 1789030174581
+    },
+    {
+      "file": "database_2026-09-10T09-49-34-577Z.json",
+      "createdAt": 1789033774581
+    },
+    {
+      "file": "database_2026-09-10T10-49-34-588Z.json",
+      "createdAt": 1789037374591
+    },
+    {
+      "file": "database_2026-09-10T11-49-34-597Z.json",
+      "createdAt": 1789040974601
+    },
+    {
+      "file": "database_2026-09-10T16-47-04-925Z.json",
+      "createdAt": 1789058824928
+    },
+    {
+      "file": "database_2026-09-10T17-47-04-923Z.json",
+      "createdAt": 1789062424926
+    },
+    {
+      "file": "database_2026-09-10T18-47-04-923Z.json",
+      "createdAt": 1789066024927
+    },
+    {
+      "file": "database_2026-09-10T19-47-04-935Z.json",
+      "createdAt": 1789069624939
+    },
+    {
+      "file": "database_2026-09-20T18-15-43-847Z.json",
+      "createdAt": 1789928143852
+    },
+    {
+      "file": "database_2026-09-20T19-15-43-791Z.json",
+      "createdAt": 1789931743799
+    },
+    {
+      "file": "database_2026-09-21T19-09-27-614Z.json",
+      "createdAt": 1790017767618
+    },
+    {
+      "file": "database_2026-09-21T20-09-27-614Z.json",
+      "createdAt": 1790021367617
+    },
+    {
+      "file": "database_2026-09-21T21-09-27-627Z.json",
+      "createdAt": 1790024967630
+    },
+    {
+      "file": "database_2026-09-21T22-09-27-637Z.json",
+      "createdAt": 1790028567640
+    },
+    {
+      "file": "database_2026-09-22T03-57-20-167Z.json",
+      "createdAt": 1790049440173
+    },
+    {
+      "file": "database_2026-09-22T04-57-20-194Z.json",
+      "createdAt": 1790053040207
+    },
+    {
+      "file": "database_2026-09-22T14-04-09-466Z.json",
+      "createdAt": 1790085849470
+    },
+    {
+      "file": "database_2026-09-22T15-54-25-292Z.json",
+      "createdAt": 1790092465295
+    },
+    {
+      "file": "database_2026-09-22T16-54-25-292Z.json",
+      "createdAt": 1790096065296
+    },
+    {
+      "file": "database_2026-09-22T17-54-25-293Z.json",
+      "createdAt": 1790099665296
+    },
+    {
+      "file": "database_2026-09-22T18-54-25-294Z.json",
+      "createdAt": 1790103265297
+    },
+    {
+      "file": "database_2026-09-22T19-54-25-308Z.json",
+      "createdAt": 1790106865311
+    },
+    {
+      "file": "database_2026-10-10T05-14-53-930Z.json",
+      "createdAt": 1791609293933
+    },
+    {
+      "file": "database_2026-10-11T02-45-39-168Z.json",
+      "createdAt": 1791686739171
+    },
+    {
+      "file": "database_2026-10-11T03-45-39-165Z.json",
+      "createdAt": 1791690339168
+    },
+    {
+      "file": "database_2026-10-11T22-06-48-648Z.json",
+      "createdAt": 1791756408651
+    },
+    {
+      "file": "database_2026-10-11T23-06-48-633Z.json",
+      "createdAt": 1791760008636
+    },
+    {
+      "file": "database_2026-10-12T00-06-48-642Z.json",
+      "createdAt": 1791763608644
+    },
+    {
+      "file": "database_2026-10-12T01-06-48-656Z.json",
+      "createdAt": 1791767208659
+    },
+    {
+      "file": "database_2026-10-13T00-48-13-023Z.json",
+      "createdAt": 1791852493026
+    },
+    {
+      "file": "database_2026-10-13T01-48-12-942Z.json",
+      "createdAt": 1791856092951
+    },
+    {
+      "file": "database_2026-10-13T15-59-09-492Z.json",
+      "createdAt": 1791907149496
+    },
+    {
+      "file": "database_2026-10-13T16-59-09-493Z.json",
+      "createdAt": 1791910749496
+    },
+    {
+      "file": "database_2026-10-13T17-59-09-493Z.json",
+      "createdAt": 1791914349496
+    },
+    {
+      "file": "database_2026-10-13T18-59-09-493Z.json",
+      "createdAt": 1791917949497
+    },
+    {
+      "file": "database_2026-10-13T19-59-09-493Z.json",
+      "createdAt": 1791921549496
+    },
+    {
+      "file": "database_2026-10-13T20-59-09-493Z.json",
+      "createdAt": 1791925149496
+    },
+    {
+      "file": "database_2026-10-13T21-59-09-767Z.json",
+      "createdAt": 1791928749770
+    },
+    {
+      "file": "database_2026-10-15T22-01-52-378Z.json",
+      "createdAt": 1792101712382
+    },
+    {
+      "file": "database_2026-10-16T02-57-12-446Z.json",
+      "createdAt": 1792119432451
+    },
+    {
+      "file": "database_2026-10-16T03-57-12-446Z.json",
+      "createdAt": 1792123032449
+    },
+    {
+      "file": "database_2026-10-16T04-57-12-461Z.json",
+      "createdAt": 1792126632464
+    },
+    {
+      "file": "database_2026-10-16T05-57-12-467Z.json",
+      "createdAt": 1792130232470
+    },
+    {
+      "file": "database_2026-10-16T06-57-12-456Z.json",
+      "createdAt": 1792133832459
+    },
+    {
+      "file": "database_2026-10-16T07-57-12-462Z.json",
+      "createdAt": 1792137432466
+    },
+    {
+      "file": "database_2026-10-16T08-57-12-459Z.json",
+      "createdAt": 1792141032463
+    },
+    {
+      "file": "database_2026-10-16T09-57-12-460Z.json",
+      "createdAt": 1792144632463
+    },
+    {
+      "file": "database_2026-10-16T10-57-12-464Z.json",
+      "createdAt": 1792148232467
+    },
+    {
+      "file": "database_2026-10-16T11-57-12-475Z.json",
+      "createdAt": 1792151832478
+    },
+    {
+      "file": "database_2026-10-16T12-57-12-482Z.json",
+      "createdAt": 1792155432485
+    },
+    {
+      "file": "database_2026-10-16T15-35-40-073Z.json",
+      "createdAt": 1792164940076
+    },
+    {
+      "file": "database_2026-10-16T16-35-40-282Z.json",
+      "createdAt": 1792168540286
+    },
+    {
+      "file": "database_2026-10-16T17-35-40-371Z.json",
+      "createdAt": 1792172140376
+    },
+    {
+      "file": "database_2026-10-16T18-35-40-433Z.json",
+      "createdAt": 1792175740436
+    },
+    {
+      "file": "database_2026-10-16T19-35-40-475Z.json",
+      "createdAt": 1792179340478
+    },
+    {
+      "file": "database_2026-10-16T20-35-40-516Z.json",
+      "createdAt": 1792182940519
+    },
+    {
+      "file": "database_2026-10-16T21-35-40-542Z.json",
+      "createdAt": 1792186540546
+    },
+    {
+      "file": "database_2026-10-16T23-21-32-838Z.json",
+      "createdAt": 1792192892841
+    },
+    {
+      "file": "database_2026-10-17T00-21-32-891Z.json",
+      "createdAt": 1792196492894
+    },
+    {
+      "file": "database_2026-10-17T01-21-33-054Z.json",
+      "createdAt": 1792200093058
+    },
+    {
+      "file": "database_2026-10-17T02-21-33-125Z.json",
+      "createdAt": 1792203693129
+    },
+    {
+      "file": "database_2026-10-17T03-21-33-167Z.json",
+      "createdAt": 1792207293170
+    },
+    {
+      "file": "database_2026-10-17T04-21-33-202Z.json",
+      "createdAt": 1792210893205
+    },
+    {
+      "file": "database_2026-10-17T05-21-33-234Z.json",
+      "createdAt": 1792214493237
+    },
+    {
+      "file": "database_2026-10-17T06-21-33-272Z.json",
+      "createdAt": 1792218093275
+    },
+    {
+      "file": "database_2026-10-17T07-21-33-304Z.json",
+      "createdAt": 1792221693307
+    },
+    {
+      "file": "database_2026-10-17T08-21-33-339Z.json",
+      "createdAt": 1792225293342
+    },
+    {
+      "file": "database_2026-10-17T09-21-33-378Z.json",
+      "createdAt": 1792228893381
+    },
+    {
+      "file": "database_2026-10-17T10-21-33-547Z.json",
+      "createdAt": 1792232493550
+    },
+    {
+      "file": "database_2026-10-17T11-21-33-624Z.json",
+      "createdAt": 1792236093628
+    },
+    {
+      "file": "database_2026-10-17T12-21-33-667Z.json",
+      "createdAt": 1792239693670
+    },
+    {
+      "file": "database_2026-10-17T13-21-33-702Z.json",
+      "createdAt": 1792243293705
+    },
+    {
+      "file": "database_2026-10-17T14-21-33-726Z.json",
+      "createdAt": 1792246893729
+    },
+    {
+      "file": "database_2026-10-17T15-21-33-783Z.json",
+      "createdAt": 1792250493786
+    },
+    {
+      "file": "database_2026-10-17T16-21-33-819Z.json",
+      "createdAt": 1792254093823
+    },
+    {
+      "file": "database_2026-10-17T17-21-33-857Z.json",
+      "createdAt": 1792257693865
+    },
+    {
+      "file": "database_2026-10-18T00-30-57-438Z.json",
+      "createdAt": 1792283457441
+    },
+    {
+      "file": "database_2026-10-18T01-30-57-448Z.json",
+      "createdAt": 1792287057451
+    },
+    {
+      "file": "database_2026-10-18T02-30-57-453Z.json",
+      "createdAt": 1792290657456
+    },
+    {
+      "file": "database_2026-10-18T03-30-57-634Z.json",
+      "createdAt": 1792294257637
+    },
+    {
+      "file": "database_2026-10-18T04-30-57-815Z.json",
+      "createdAt": 1792297857818
+    },
+    {
+      "file": "database_2026-10-18T06-01-49-754Z.json",
+      "createdAt": 1792303309758
+    },
+    {
+      "file": "database_2026-10-18T07-01-49-764Z.json",
+      "createdAt": 1792306909767
+    },
+    {
+      "file": "database_2026-10-18T08-01-49-766Z.json",
+      "createdAt": 1792310509769
+    },
+    {
+      "file": "database_2026-10-18T09-01-49-768Z.json",
+      "createdAt": 1792314109772
+    },
+    {
+      "file": "database_2026-10-18T10-01-49-767Z.json",
+      "createdAt": 1792317709770
+    },
+    {
+      "file": "database_2026-10-18T11-01-49-768Z.json",
+      "createdAt": 1792321309771
+    },
+    {
+      "file": "database_2026-10-18T12-01-49-839Z.json",
+      "createdAt": 1792324909842
+    },
+    {
+      "file": "database_2026-10-18T13-01-50-126Z.json",
+      "createdAt": 1792328510129
+    },
+    {
+      "file": "database_2026-10-18T14-01-50-228Z.json",
+      "createdAt": 1792332110231
+    },
+    {
+      "file": "database_2026-10-18T15-01-50-276Z.json",
+      "createdAt": 1792335710279
+    },
+    {
+      "file": "database_2026-10-18T16-01-50-307Z.json",
+      "createdAt": 1792339310310
+    },
+    {
+      "file": "database_2026-10-18T17-01-50-340Z.json",
+      "createdAt": 1792342910343
+    },
+    {
+      "file": "database_2026-10-18T18-01-50-369Z.json",
+      "createdAt": 1792346510372
+    },
+    {
+      "file": "database_2026-10-18T19-15-58-437Z.json",
+      "createdAt": 1792350958445
+    },
+    {
+      "file": "database_2026-10-18T22-54-52-206Z.json",
+      "createdAt": 1792364092210
+    },
+    {
+      "file": "database_2026-10-18T23-54-51-979Z.json",
+      "createdAt": 1792367691982
+    },
+    {
+      "file": "database_2026-10-19T03-42-38-937Z.json",
+      "createdAt": 1792381358942
+    },
+    {
+      "file": "database_2026-10-19T04-42-38-936Z.json",
+      "createdAt": 1792384958939
+    },
+    {
+      "file": "database_2026-10-19T05-42-38-936Z.json",
+      "createdAt": 1792388558940
+    },
+    {
+      "file": "database_2026-10-19T06-42-38-945Z.json",
+      "createdAt": 1792392158949
+    },
+    {
+      "file": "database_2026-10-19T17-15-38-160Z.json",
+      "createdAt": 1792430138164
+    },
+    {
+      "file": "database_2026-10-19T18-15-37-969Z.json",
+      "createdAt": 1792433737972
+    },
+    {
+      "file": "database_2026-10-19T19-15-37-905Z.json",
+      "createdAt": 1792437337908
+    },
+    {
+      "file": "database_2026-10-19T20-31-14-557Z.json",
+      "createdAt": 1792441874560
+    },
+    {
+      "file": "database_2026-10-19T21-31-14-553Z.json",
+      "createdAt": 1792445474556
+    },
+    {
+      "file": "database_2026-10-19T22-31-14-552Z.json",
+      "createdAt": 1792449074555
+    },
+    {
+      "file": "database_2026-10-19T23-31-14-552Z.json",
+      "createdAt": 1792452674555
+    },
+    {
+      "file": "database_2026-10-20T00-31-14-552Z.json",
+      "createdAt": 1792456274555
+    },
+    {
+      "file": "database_2026-10-20T01-31-14-727Z.json",
+      "createdAt": 1792459874731
+    },
+    {
+      "file": "database_2026-10-20T02-31-15-025Z.json",
+      "createdAt": 1792463475029
+    },
+    {
+      "file": "database_2026-10-20T03-31-15-140Z.json",
+      "createdAt": 1792467075143
+    },
+    {
+      "file": "database_2026-10-20T04-31-15-197Z.json",
+      "createdAt": 1792470675200
+    },
+    {
+      "file": "database_2026-10-20T05-31-15-235Z.json",
+      "createdAt": 1792474275238
+    },
+    {
+      "file": "database_2026-10-20T06-31-15-270Z.json",
+      "createdAt": 1792477875273
+    },
+    {
+      "file": "database_2026-10-20T07-31-15-301Z.json",
+      "createdAt": 1792481475304
+    },
+    {
+      "file": "database_2026-10-20T08-31-15-344Z.json",
+      "createdAt": 1792485075347
+    },
+    {
+      "file": "database_2026-10-20T09-31-15-391Z.json",
+      "createdAt": 1792488675395
+    },
+    {
+      "file": "database_2026-10-20T10-31-15-461Z.json",
+      "createdAt": 1792492275464
+    },
+    {
+      "file": "database_2026-10-20T11-31-15-597Z.json",
+      "createdAt": 1792495875600
+    },
+    {
+      "file": "database_2026-10-20T15-19-00-866Z.json",
+      "createdAt": 1792509540870
+    },
+    {
+      "file": "database_2026-10-20T16-19-00-886Z.json",
+      "createdAt": 1792513140890
+    },
+    {
+      "file": "database_2026-10-20T17-19-00-892Z.json",
+      "createdAt": 1792516740895
+    },
+    {
+      "file": "database_2026-10-20T18-19-00-901Z.json",
+      "createdAt": 1792520340904
+    },
+    {
+      "file": "database_2026-10-20T19-19-00-903Z.json",
+      "createdAt": 1792523940907
+    },
+    {
+      "file": "database_2026-10-20T20-19-00-905Z.json",
+      "createdAt": 1792527540909
+    },
+    {
+      "file": "database_2026-10-20T21-19-00-988Z.json",
+      "createdAt": 1792531140991
+    },
+    {
+      "file": "database_2026-10-20T22-19-01-290Z.json",
+      "createdAt": 1792534741293
+    },
+    {
+      "file": "database_2026-10-20T23-19-01-410Z.json",
+      "createdAt": 1792538341472
+    },
+    {
+      "file": "database_2026-10-21T00-33-11-275Z.json",
+      "createdAt": 1792542791278
+    },
+    {
+      "file": "database_2026-10-21T01-33-11-308Z.json",
+      "createdAt": 1792546391312
+    },
+    {
+      "file": "database_2026-10-21T02-33-11-335Z.json",
+      "createdAt": 1792549991339
+    },
+    {
+      "file": "database_2026-10-21T03-33-11-360Z.json",
+      "createdAt": 1792553591364
+    },
+    {
+      "file": "database_2026-10-21T04-33-11-384Z.json",
+      "createdAt": 1792557191388
+    },
+    {
+      "file": "database_2026-10-21T05-33-11-410Z.json",
+      "createdAt": 1792560791414
+    },
+    {
+      "file": "database_2026-10-21T14-08-23-886Z.json",
+      "createdAt": 1792591703889
+    },
+    {
+      "file": "database_2026-10-21T15-08-23-886Z.json",
+      "createdAt": 1792595303890
+    },
+    {
+      "file": "database_2026-10-21T16-35-20-121Z.json",
+      "createdAt": 1792600520126
+    },
+    {
+      "file": "database_2026-10-21T17-35-20-122Z.json",
+      "createdAt": 1792604120126
+    },
+    {
+      "file": "database_2026-10-21T18-35-20-122Z.json",
+      "createdAt": 1792607720125
+    },
+    {
+      "file": "database_2026-10-22T00-32-59-108Z.json",
+      "createdAt": 1792629179112
+    },
+    {
+      "file": "database_2026-10-22T01-32-59-114Z.json",
+      "createdAt": 1792632779118
+    },
+    {
+      "file": "database_2026-10-22T02-32-59-119Z.json",
+      "createdAt": 1792636379123
+    },
+    {
+      "file": "database_2026-10-22T03-32-59-120Z.json",
+      "createdAt": 1792639979124
+    },
+    {
+      "file": "database_2026-10-22T04-32-59-120Z.json",
+      "createdAt": 1792643579123
+    },
+    {
+      "file": "database_2026-10-22T05-32-59-121Z.json",
+      "createdAt": 1792647179125
+    },
+    {
+      "file": "database_2026-10-22T22-41-36-553Z.json",
+      "createdAt": 1792708896557
+    },
+    {
+      "file": "database_2026-10-22T23-41-36-450Z.json",
+      "createdAt": 1792712496453
+    },
+    {
+      "file": "database_2026-10-23T00-41-36-414Z.json",
+      "createdAt": 1792716096418
+    },
+    {
+      "file": "database_2026-10-23T02-36-11-195Z.json",
+      "createdAt": 1792722971199
+    },
+    {
+      "file": "database_2026-10-23T03-36-11-194Z.json",
+      "createdAt": 1792726571197
+    },
+    {
+      "file": "database_2026-10-23T04-36-11-195Z.json",
+      "createdAt": 1792730171198
+    },
+    {
+      "file": "database_2026-10-23T05-36-11-196Z.json",
+      "createdAt": 1792733771206
+    },
+    {
+      "file": "database_2026-10-23T06-36-11-196Z.json",
+      "createdAt": 1792737371199
+    },
+    {
+      "file": "database_2026-10-23T20-23-12-940Z.json",
+      "createdAt": 1792786992944
+    },
+    {
+      "file": "database_2026-10-23T21-23-13-105Z.json",
+      "createdAt": 1792790593108
+    },
+    {
+      "file": "database_2026-10-23T22-23-13-159Z.json",
+      "createdAt": 1792794193162
+    },
+    {
+      "file": "database_2026-10-24T00-37-45-166Z.json",
+      "createdAt": 1792802265175
+    },
+    {
+      "file": "database_2026-10-24T01-37-45-169Z.json",
+      "createdAt": 1792805865173
+    },
+    {
+      "file": "database_2026-10-24T03-43-52-195Z.json",
+      "createdAt": 1792813432199
+    },
+    {
+      "file": "database_2026-10-24T04-43-52-194Z.json",
+      "createdAt": 1792817032197
+    },
+    {
+      "file": "database_2026-10-24T05-43-52-655Z.json",
+      "createdAt": 1792820632661
+    },
+    {
+      "file": "database_2026-10-24T18-58-11-289Z.json",
+      "createdAt": 1792868291292
+    },
+    {
+      "file": "database_2026-10-24T19-58-11-224Z.json",
+      "createdAt": 1792871891227
+    },
+    {
+      "file": "database_2026-10-24T20-58-11-215Z.json",
+      "createdAt": 1792875491218
+    },
+    {
+      "file": "database_2026-10-24T21-58-11-222Z.json",
+      "createdAt": 1792879091226
+    },
+    {
+      "file": "database_2026-10-24T22-58-11-220Z.json",
+      "createdAt": 1792882691223
+    },
+    {
+      "file": "database_2026-10-25T00-52-54-100Z.json",
+      "createdAt": 1792889574103
+    },
+    {
+      "file": "database_2026-10-25T01-52-54-101Z.json",
+      "createdAt": 1792893174106
+    },
+    {
+      "file": "database_2026-10-25T03-30-20-655Z.json",
+      "createdAt": 1792899020659
+    },
+    {
+      "file": "database_2026-10-25T05-00-08-532Z.json",
+      "createdAt": 1792904408536
+    },
+    {
+      "file": "database_2026-10-25T06-00-08-532Z.json",
+      "createdAt": 1792908008537
+    },
+    {
+      "file": "database_2026-10-25T16-40-33-295Z.json",
+      "createdAt": 1792946433778
+    },
+    {
+      "file": "database_2026-10-25T18-02-48-717Z.json",
+      "createdAt": 1792951368720
+    },
+    {
+      "file": "database_2026-10-25T19-02-48-684Z.json",
+      "createdAt": 1792954968687
+    },
+    {
+      "file": "database_2026-10-25T20-02-48-673Z.json",
+      "createdAt": 1792958568676
+    },
+    {
+      "file": "database_2026-10-25T21-02-48-653Z.json",
+      "createdAt": 1792962168657
+    },
+    {
+      "file": "database_2026-10-25T22-02-48-671Z.json",
+      "createdAt": 1792965768674
+    },
+    {
+      "file": "database_2026-10-25T23-02-48-684Z.json",
+      "createdAt": 1792969368688
+    },
+    {
+      "file": "database_2026-10-26T04-40-36-887Z.json",
+      "createdAt": 1792989636891
+    },
+    {
+      "file": "database_2026-10-26T05-40-36-894Z.json",
+      "createdAt": 1792993236898
+    },
+    {
+      "file": "database_2026-10-26T06-40-36-898Z.json",
+      "createdAt": 1792996836901
+    },
+    {
+      "file": "database_2026-10-26T07-40-36-901Z.json",
+      "createdAt": 1793000436904
+    },
+    {
+      "file": "database_2026-10-27T02-04-45-591Z.json",
+      "createdAt": 1793066685599
+    },
+    {
+      "file": "database_2026-10-27T04-26-37-854Z.json",
+      "createdAt": 1793075197859
+    },
+    {
+      "file": "database_2026-10-27T05-26-37-820Z.json",
+      "createdAt": 1793078797825
+    },
+    {
+      "file": "database_2026-10-27T06-26-37-811Z.json",
+      "createdAt": 1793082397816
+    },
+    {
+      "file": "database_2026-10-27T07-26-37-809Z.json",
+      "createdAt": 1793085997813
+    },
+    {
+      "file": "database_2026-10-27T08-26-37-815Z.json",
+      "createdAt": 1793089597819
+    },
+    {
+      "file": "database_2026-10-27T09-26-37-817Z.json",
+      "createdAt": 1793093197821
+    },
+    {
+      "file": "database_2026-10-27T10-26-37-826Z.json",
+      "createdAt": 1793096797830
+    },
+    {
+      "file": "database_2026-10-27T11-26-37-944Z.json",
+      "createdAt": 1793100397949
+    },
+    {
+      "file": "database_2026-10-27T12-26-38-185Z.json",
+      "createdAt": 1793103998190
+    },
+    {
+      "file": "database_2026-10-27T13-52-43-698Z.json",
+      "createdAt": 1793109163704
+    },
+    {
+      "file": "database_2026-10-27T17-31-41-104Z.json",
+      "createdAt": 1793122301109
+    },
+    {
+      "file": "database_2026-10-27T18-31-41-142Z.json",
+      "createdAt": 1793125901146
+    },
+    {
+      "file": "database_2026-10-27T19-31-41-167Z.json",
+      "createdAt": 1793129501172
+    },
+    {
+      "file": "database_2026-10-27T20-31-41-256Z.json",
+      "createdAt": 1793133101262
+    },
+    {
+      "file": "database_2026-10-27T22-01-44-233Z.json",
+      "createdAt": 1793138504237
+    },
+    {
+      "file": "database_2026-10-27T23-01-44-294Z.json",
+      "createdAt": 1793142104299
+    },
+    {
+      "file": "database_2026-10-28T00-34-24-665Z.json",
+      "createdAt": 1793147664670
+    },
+    {
+      "file": "database_2026-10-28T01-34-24-708Z.json",
+      "createdAt": 1793151264714
+    },
+    {
+      "file": "database_2026-10-28T02-34-24-741Z.json",
+      "createdAt": 1793154864746
+    },
+    {
+      "file": "database_2026-10-28T03-34-24-776Z.json",
+      "createdAt": 1793158464781
+    },
+    {
+      "file": "database_2026-10-28T05-42-31-504Z.json",
+      "createdAt": 1793166151508
+    },
+    {
+      "file": "database_2026-10-28T12-01-48-242Z.json",
+      "createdAt": 1793188908246
+    },
+    {
+      "file": "database_2026-10-28T13-01-48-248Z.json",
+      "createdAt": 1793192508254
+    },
+    {
+      "file": "database_2026-10-28T14-01-48-250Z.json",
+      "createdAt": 1793196108253
+    },
+    {
+      "file": "database_2026-10-28T15-01-48-236Z.json",
+      "createdAt": 1793199708239
+    },
+    {
+      "file": "database_2026-10-28T16-01-48-206Z.json",
+      "createdAt": 1793203308220
+    },
+    {
+      "file": "database_2026-10-28T17-01-48-198Z.json",
+      "createdAt": 1793206908213
+    },
+    {
+      "file": "database_2026-10-28T18-01-48-196Z.json",
+      "createdAt": 1793210508211
+    },
+    {
+      "file": "database_2026-10-28T20-14-42-549Z.json",
+      "createdAt": 1793218482552
+    },
+    {
+      "file": "database_2026-10-28T21-14-42-552Z.json",
+      "createdAt": 1793222082555
+    },
+    {
+      "file": "database_2026-10-28T22-14-42-553Z.json",
+      "createdAt": 1793225682558
+    },
+    {
+      "file": "database_2026-10-28T23-14-42-554Z.json",
+      "createdAt": 1793229282558
+    },
+    {
+      "file": "database_2026-10-29T00-14-42-795Z.json",
+      "createdAt": 1793232882798
+    },
+    {
+      "file": "database_2026-10-29T03-09-59-302Z.json",
+      "createdAt": 1793243399306
+    },
+    {
+      "file": "database_2026-10-29T04-09-59-356Z.json",
+      "createdAt": 1793246999359
+    },
+    {
+      "file": "database_2026-10-29T05-09-59-373Z.json",
+      "createdAt": 1793250599378
+    },
+    {
+      "file": "database_2026-10-29T06-09-59-452Z.json",
+      "createdAt": 1793254199522
+    },
+    {
+      "file": "database_2026-10-29T07-09-59-440Z.json",
+      "createdAt": 1793257799443
+    },
+    {
+      "file": "database_2026-10-29T08-09-59-440Z.json",
+      "createdAt": 1793261399445
+    },
+    {
+      "file": "database_2026-10-29T09-09-59-441Z.json",
+      "createdAt": 1793264999445
+    },
+    {
+      "file": "database_2026-10-29T10-09-59-448Z.json",
+      "createdAt": 1793268599452
+    },
+    {
+      "file": "database_2026-10-29T11-09-59-548Z.json",
+      "createdAt": 1793272199552
+    },
+    {
+      "file": "database_2026-10-29T12-09-59-677Z.json",
+      "createdAt": 1793275799681
+    },
+    {
+      "file": "database_2026-10-29T19-13-09-981Z.json",
+      "createdAt": 1793301189985
+    },
+    {
+      "file": "database_2026-10-29T20-13-09-984Z.json",
+      "createdAt": 1793304789989
+    },
+    {
+      "file": "database_2026-10-29T21-13-09-984Z.json",
+      "createdAt": 1793308389990
+    },
+    {
+      "file": "database_2026-10-29T22-13-09-986Z.json",
+      "createdAt": 1793311989991
+    },
+    {
+      "file": "database_2026-10-30T00-16-14-824Z.json",
+      "createdAt": 1793319374833
+    },
+    {
+      "file": "database_2026-10-30T02-23-04-384Z.json",
+      "createdAt": 1793326984388
+    },
+    {
+      "file": "database_2026-10-30T03-23-04-461Z.json",
+      "createdAt": 1793330584465
+    },
+    {
+      "file": "database_2026-10-30T04-23-04-484Z.json",
+      "createdAt": 1793334184488
+    },
+    {
+      "file": "database_2026-10-30T14-14-08-904Z.json",
+      "createdAt": 1793369648909
+    },
+    {
+      "file": "database_2026-10-30T16-12-59-735Z.json",
+      "createdAt": 1793376779740
+    },
+    {
+      "file": "database_2026-10-30T17-12-59-738Z.json",
+      "createdAt": 1793380379743
+    },
+    {
+      "file": "database_2026-10-30T18-44-20-028Z.json",
+      "createdAt": 1793385860031
+    },
+    {
+      "file": "database_2026-10-31T00-26-53-003Z.json",
+      "createdAt": 1793406413014
+    },
+    {
+      "file": "database_2026-10-31T05-01-29-176Z.json",
+      "createdAt": 1793422889180
+    },
+    {
+      "file": "database_2026-10-31T06-29-26-875Z.json",
+      "createdAt": 1793428166880
+    },
+    {
+      "file": "database_2026-10-31T07-29-26-874Z.json",
+      "createdAt": 1793431766877
+    },
+    {
+      "file": "database_2026-10-31T08-29-26-889Z.json",
+      "createdAt": 1793435366894
+    },
+    {
+      "file": "database_2026-10-31T09-29-26-899Z.json",
+      "createdAt": 1793438966904
+    },
+    {
+      "file": "database_2026-10-31T10-29-26-906Z.json",
+      "createdAt": 1793442566911
+    },
+    {
+      "file": "database_2026-10-31T11-29-27-212Z.json",
+      "createdAt": 1793446167217
+    },
+    {
+      "file": "database_2026-10-31T12-29-27-372Z.json",
+      "createdAt": 1793449767376
+    },
+    {
+      "file": "database_2026-10-31T13-29-27-440Z.json",
+      "createdAt": 1793453367446
+    },
+    {
+      "file": "database_2026-10-31T14-29-27-483Z.json",
+      "createdAt": 1793456967488
+    },
+    {
+      "file": "database_2026-10-31T15-29-27-513Z.json",
+      "createdAt": 1793460567517
+    },
+    {
+      "file": "database_2026-10-31T17-25-05-786Z.json",
+      "createdAt": 1793467505791
+    },
+    {
+      "file": "database_2026-10-31T18-25-05-812Z.json",
+      "createdAt": 1793471105817
+    },
+    {
+      "file": "database_2026-10-31T19-25-05-840Z.json",
+      "createdAt": 1793474705922
+    },
+    {
+      "file": "database_2026-10-31T20-25-05-985Z.json",
+      "createdAt": 1793478305991
+    },
+    {
+      "file": "database_2026-10-31T21-25-06-094Z.json",
+      "createdAt": 1793481906099
+    },
+    {
+      "file": "database_2026-10-31T23-08-53-462Z.json",
+      "createdAt": 1793488133471
+    },
+    {
+      "file": "database_2026-11-01T00-23-46-497Z.json",
+      "createdAt": 1793492626677
+    },
+    {
+      "file": "database_2026-11-01T01-23-46-492Z.json",
+      "createdAt": 1793496226497
+    },
+    {
+      "file": "database_2026-11-01T02-23-46-513Z.json",
+      "createdAt": 1793499826519
+    },
+    {
+      "file": "database_2026-11-01T03-23-46-488Z.json",
+      "createdAt": 1793503426493
+    },
+    {
+      "file": "database_2026-11-01T04-23-46-489Z.json",
+      "createdAt": 1793507026493
+    },
+    {
+      "file": "database_2026-11-01T05-23-46-493Z.json",
+      "createdAt": 1793510626498
+    },
+    {
+      "file": "database_2026-11-01T12-08-26-820Z.json",
+      "createdAt": 1793534906825
+    },
+    {
+      "file": "database_2026-11-01T13-08-26-836Z.json",
+      "createdAt": 1793538506847
+    },
+    {
+      "file": "database_2026-11-01T14-08-26-836Z.json",
+      "createdAt": 1793542106840
+    },
+    {
+      "file": "database_2026-11-01T15-08-27-113Z.json",
+      "createdAt": 1793545707118
+    },
+    {
+      "file": "database_2026-11-01T16-08-27-239Z.json",
+      "createdAt": 1793549307245
+    },
+    {
+      "file": "database_2026-11-01T17-08-27-274Z.json",
+      "createdAt": 1793552907278
+    },
+    {
+      "file": "database_2026-11-01T18-08-27-285Z.json",
+      "createdAt": 1793556507290
+    },
+    {
+      "file": "database_2026-11-01T19-08-27-290Z.json",
+      "createdAt": 1793560107294
+    },
+    {
+      "file": "database_2026-11-01T20-08-27-310Z.json",
+      "createdAt": 1793563707318
+    },
+    {
+      "file": "database_2026-11-01T21-08-27-312Z.json",
+      "createdAt": 1793567307317
+    },
+    {
+      "file": "database_2026-11-01T22-08-27-326Z.json",
+      "createdAt": 1793570907332
+    },
+    {
+      "file": "database_2026-11-01T23-08-27-358Z.json",
+      "createdAt": 1793574507374
+    },
+    {
+      "file": "database_2026-11-02T00-08-27-703Z.json",
+      "createdAt": 1793578107716
+    },
+    {
+      "file": "database_2026-11-02T01-08-27-836Z.json",
+      "createdAt": 1793581707843
+    },
+    {
+      "file": "database_2026-11-02T02-35-23-095Z.json",
+      "createdAt": 1793586923100
+    },
+    {
+      "file": "database_2026-11-02T03-35-23-126Z.json",
+      "createdAt": 1793590523132
+    },
+    {
+      "file": "database_2026-11-02T04-35-23-164Z.json",
+      "createdAt": 1793594123170
+    },
+    {
+      "file": "database_2026-11-02T05-35-23-199Z.json",
+      "createdAt": 1793597723205
+    },
+    {
+      "file": "database_2026-11-02T06-35-23-227Z.json",
+      "createdAt": 1793601323232
+    },
+    {
+      "file": "database_2026-11-02T07-35-23-261Z.json",
+      "createdAt": 1793604923266
+    },
+    {
+      "file": "database_2026-11-02T08-35-23-382Z.json",
+      "createdAt": 1793608523387
+    },
+    {
+      "file": "database_2026-11-02T22-43-18-247Z.json",
+      "createdAt": 1793659398252
+    },
+    {
+      "file": "database_2026-11-03T00-07-53-859Z.json",
+      "createdAt": 1793664473863
+    },
+    {
+      "file": "database_2026-11-03T01-07-53-873Z.json",
+      "createdAt": 1793668073878
+    },
+    {
+      "file": "database_2026-11-03T02-07-53-875Z.json",
+      "createdAt": 1793671673884
+    },
+    {
+      "file": "database_2026-11-05T02-22-53-097Z.json",
+      "createdAt": 1793845373160
+    },
+    {
+      "file": "database_2026-11-05T03-22-53-106Z.json",
+      "createdAt": 1793848973116
+    },
+    {
+      "file": "database_2026-11-05T04-22-53-130Z.json",
+      "createdAt": 1793852573136
+    },
+    {
+      "file": "database_2026-11-06T03-01-47-319Z.json",
+      "createdAt": 1793934107328
+    },
+    {
+      "file": "database_2026-11-06T04-40-26-222Z.json",
+      "createdAt": 1793940026228
+    },
+    {
+      "file": "database_2026-11-06T05-40-26-239Z.json",
+      "createdAt": 1793943626243
+    },
+    {
+      "file": "database_2026-11-06T06-40-26-614Z.json",
+      "createdAt": 1793947226618
+    },
+    {
+      "file": "database_2026-11-06T07-40-26-764Z.json",
+      "createdAt": 1793950826769
+    },
+    {
+      "file": "database_2026-11-06T08-40-26-825Z.json",
+      "createdAt": 1793954426831
+    },
+    {
+      "file": "database_2026-11-06T09-40-26-881Z.json",
+      "createdAt": 1793958026885
+    },
+    {
+      "file": "database_2026-11-06T10-40-26-918Z.json",
+      "createdAt": 1793961626922
+    },
+    {
+      "file": "database_2026-11-06T11-40-26-955Z.json",
+      "createdAt": 1793965226959
+    },
+    {
+      "file": "database_2026-11-06T12-40-27-000Z.json",
+      "createdAt": 1793968827005
+    },
+    {
+      "file": "database_2026-11-06T13-40-27-054Z.json",
+      "createdAt": 1793972427059
+    },
+    {
+      "file": "database_2026-11-06T14-40-27-080Z.json",
+      "createdAt": 1793976027084
+    },
+    {
+      "file": "database_2026-11-06T15-40-27-276Z.json",
+      "createdAt": 1793979627281
+    },
+    {
+      "file": "database_2026-11-06T16-40-27-379Z.json",
+      "createdAt": 1793983227383
+    },
+    {
+      "file": "database_2026-11-06T17-40-27-432Z.json",
+      "createdAt": 1793986827437
+    },
+    {
+      "file": "database_2026-11-06T18-40-27-473Z.json",
+      "createdAt": 1793990427479
+    },
+    {
+      "file": "database_2026-11-06T19-40-27-507Z.json",
+      "createdAt": 1793994027513
+    },
+    {
+      "file": "database_2026-11-06T21-39-33-787Z.json",
+      "createdAt": 1794001173791
+    },
+    {
+      "file": "database_2026-11-06T22-39-33-838Z.json",
+      "createdAt": 1794004773842
+    },
+    {
+      "file": "database_2026-11-06T23-39-33-871Z.json",
+      "createdAt": 1794008373877
+    },
+    {
+      "file": "database_2026-11-07T00-39-34-051Z.json",
+      "createdAt": 1794011974056
+    },
+    {
+      "file": "database_2026-11-07T01-39-34-151Z.json",
+      "createdAt": 1794015574155
+    },
+    {
+      "file": "database_2026-11-07T02-39-34-196Z.json",
+      "createdAt": 1794019174201
+    },
+    {
+      "file": "database_2026-11-07T03-39-34-234Z.json",
+      "createdAt": 1794022774244
+    },
+    {
+      "file": "database_2026-11-07T04-39-34-268Z.json",
+      "createdAt": 1794026374273
+    },
+    {
+      "file": "database_2026-11-07T05-39-34-255Z.json",
+      "createdAt": 1794029974260
+    },
+    {
+      "file": "database_2026-11-07T06-39-34-270Z.json",
+      "createdAt": 1794033574275
+    },
+    {
+      "file": "database_2026-11-07T07-39-34-286Z.json",
+      "createdAt": 1794037174291
+    },
+    {
+      "file": "database_2026-11-07T08-39-34-297Z.json",
+      "createdAt": 1794040774302
+    },
+    {
+      "file": "database_2026-11-07T09-39-34-393Z.json",
+      "createdAt": 1794044374397
+    },
+    {
+      "file": "database_2026-11-07T10-39-34-530Z.json",
+      "createdAt": 1794047974534
+    },
+    {
+      "file": "database_2026-11-07T11-39-34-585Z.json",
+      "createdAt": 1794051574589
+    },
+    {
+      "file": "database_2026-11-07T12-39-34-603Z.json",
+      "createdAt": 1794055174608
+    },
+    {
+      "file": "database_2026-11-07T13-39-34-615Z.json",
+      "createdAt": 1794058774620
+    },
+    {
+      "file": "database_2026-11-07T14-39-34-634Z.json",
+      "createdAt": 1794062374638
+    },
+    {
+      "file": "database_2026-11-07T15-39-34-636Z.json",
+      "createdAt": 1794065974655
+    },
+    {
+      "file": "database_2026-11-07T16-39-34-635Z.json",
+      "createdAt": 1794069574641
+    },
+    {
+      "file": "database_2026-11-07T17-39-34-638Z.json",
+      "createdAt": 1794073174644
+    },
+    {
+      "file": "database_2026-11-07T18-39-34-877Z.json",
+      "createdAt": 1794076774882
+    },
+    {
+      "file": "database_2026-11-07T19-39-35-104Z.json",
+      "createdAt": 1794080375109
+    },
+    {
+      "file": "database_2026-11-07T20-39-35-197Z.json",
+      "createdAt": 1794083975203
+    },
+    {
+      "file": "database_2026-11-07T21-39-35-407Z.json",
+      "createdAt": 1794087575446
+    },
+    {
+      "file": "database_2026-11-07T22-39-35-347Z.json",
+      "createdAt": 1794091175374
+    },
+    {
+      "file": "database_2026-11-07T23-39-35-389Z.json",
+      "createdAt": 1794094775392
+    },
+    {
+      "file": "database_2026-11-08T00-39-35-416Z.json",
+      "createdAt": 1794098375421
+    },
+    {
+      "file": "database_2026-11-08T01-39-35-444Z.json",
+      "createdAt": 1794101975449
+    },
+    {
+      "file": "database_2026-11-08T02-39-35-471Z.json",
+      "createdAt": 1794105575475
+    },
+    {
+      "file": "database_2026-11-08T04-26-40-390Z.json",
+      "createdAt": 1794112000395
+    },
+    {
+      "file": "database_2026-11-08T05-26-40-469Z.json",
+      "createdAt": 1794115600473
+    },
+    {
+      "file": "database_2026-11-08T06-26-40-531Z.json",
+      "createdAt": 1794119200535
+    },
+    {
+      "file": "database_2026-11-08T07-26-40-576Z.json",
+      "createdAt": 1794122800580
+    },
+    {
+      "file": "database_2026-11-08T08-26-40-622Z.json",
+      "createdAt": 1794126400626
+    },
+    {
+      "file": "database_2026-11-08T09-26-40-658Z.json",
+      "createdAt": 1794130000663
+    },
+    {
+      "file": "database_2026-11-08T10-26-40-706Z.json",
+      "createdAt": 1794133600751
+    },
+    {
+      "file": "database_2026-11-09T18-01-59-860Z.json",
+      "createdAt": 1794247319864
+    },
+    {
+      "file": "database_2026-11-09T19-27-56-695Z.json",
+      "createdAt": 1794252476699
+    },
+    {
+      "file": "database_2026-11-09T20-27-56-733Z.json",
+      "createdAt": 1794256076737
+    },
+    {
+      "file": "database_2026-11-09T21-27-56-775Z.json",
+      "createdAt": 1794259676779
+    },
+    {
+      "file": "database_2026-11-09T22-27-56-799Z.json",
+      "createdAt": 1794263276802
+    },
+    {
+      "file": "database_2026-11-09T23-27-56-934Z.json",
+      "createdAt": 1794266876937
+    },
+    {
+      "file": "database_2026-11-10T01-50-04-050Z.json",
+      "createdAt": 1794275404059
+    },
+    {
+      "file": "database_2026-11-10T04-53-57-628Z.json",
+      "createdAt": 1794286437631
+    },
+    {
+      "file": "database_2026-11-10T08-17-39-695Z.json",
+      "createdAt": 1794298659701
+    },
+    {
+      "file": "database_2026-11-10T09-17-39-604Z.json",
+      "createdAt": 1794302259609
+    },
+    {
+      "file": "database_2026-11-10T10-30-13-573Z.json",
+      "createdAt": 1794306613580
+    },
+    {
+      "file": "database_2026-11-10T11-30-23-803Z.json",
+      "createdAt": 1794310223808
+    },
+    {
+      "file": "database_2026-11-10T18-58-03-236Z.json",
+      "createdAt": 1794337083245
+    },
+    {
+      "file": "database_2026-11-10T19-58-03-254Z.json",
+      "createdAt": 1794340683259
+    },
+    {
+      "file": "database_2026-11-11T01-50-05-457Z.json",
+      "createdAt": 1794361805461
+    },
+    {
+      "file": "database_2026-11-11T02-50-05-478Z.json",
+      "createdAt": 1794365405487
+    },
+    {
+      "file": "database_2026-11-11T03-50-05-478Z.json",
+      "createdAt": 1794369005482
+    },
+    {
+      "file": "database_2026-11-11T04-50-05-463Z.json",
+      "createdAt": 1794372605467
+    },
+    {
+      "file": "database_2026-11-11T12-22-27-877Z.json",
+      "createdAt": 1794399747900
+    },
+    {
+      "file": "database_2026-11-11T13-22-27-940Z.json",
+      "createdAt": 1794403347961
+    },
+    {
+      "file": "database_2026-11-11T14-22-27-908Z.json",
+      "createdAt": 1794406947914
+    },
+    {
+      "file": "database_2026-11-12T06-13-09-242Z.json",
+      "createdAt": 1794463989247
+    },
+    {
+      "file": "database_2026-11-12T07-13-09-187Z.json",
+      "createdAt": 1794467589192
+    },
+    {
+      "file": "database_2026-11-12T08-13-09-069Z.json",
+      "createdAt": 1794471189082
+    },
+    {
+      "file": "database_2026-11-12T09-13-09-042Z.json",
+      "createdAt": 1794474789047
+    },
+    {
+      "file": "database_2026-11-12T10-13-09-032Z.json",
+      "createdAt": 1794478389036
+    },
+    {
+      "file": "database_2026-11-12T11-13-09-041Z.json",
+      "createdAt": 1794481989046
+    },
+    {
+      "file": "database_2026-11-12T12-13-09-042Z.json",
+      "createdAt": 1794485589047
+    },
+    {
+      "file": "database_2026-11-12T13-13-09-039Z.json",
+      "createdAt": 1794489189044
+    },
+    {
+      "file": "database_2026-11-12T14-13-09-039Z.json",
+      "createdAt": 1794492789044
+    },
+    {
+      "file": "database_2026-11-12T15-13-09-048Z.json",
+      "createdAt": 1794496389053
+    },
+    {
+      "file": "database_2026-11-14T04-42-46-151Z.json",
+      "createdAt": 1794631366157
+    },
+    {
+      "file": "database_2026-11-14T17-48-24-506Z.json",
+      "createdAt": 1794678504510
+    },
+    {
+      "file": "database_2026-11-14T18-49-14-271Z.json",
+      "createdAt": 1794682154276
+    },
+    {
+      "file": "database_2026-11-14T20-20-54-177Z.json",
+      "createdAt": 1794687654182
+    },
+    {
+      "file": "database_2026-11-14T21-21-22-455Z.json",
+      "createdAt": 1794691282462
+    },
+    {
+      "file": "database_2026-11-14T22-22-09-443Z.json",
+      "createdAt": 1794694929448
+    },
+    {
+      "file": "database_2026-11-14T23-22-09-451Z.json",
+      "createdAt": 1794698529456
+    },
+    {
+      "file": "database_2026-11-15T00-23-08-527Z.json",
+      "createdAt": 1794702188533
+    },
+    {
+      "file": "database_2026-11-17T01-27-35-906Z.json",
+      "createdAt": 1794878855910
+    },
+    {
+      "file": "database_2026-11-17T02-27-35-962Z.json",
+      "createdAt": 1794882455966
+    },
+    {
+      "file": "database_2026-11-17T03-27-57-002Z.json",
+      "createdAt": 1794886077007
+    },
+    {
+      "file": "database_2026-11-17T04-58-17-820Z.json",
+      "createdAt": 1794891497824
+    },
+    {
+      "file": "database_2026-11-17T05-58-17-854Z.json",
+      "createdAt": 1794895097858
+    },
+    {
+      "file": "database_2026-11-17T06-58-17-893Z.json",
+      "createdAt": 1794898697907
+    },
+    {
+      "file": "database_2026-11-17T07-58-17-928Z.json",
+      "createdAt": 1794902297932
+    },
+    {
+      "file": "database_2026-11-17T08-58-18-047Z.json",
+      "createdAt": 1794905898051
+    },
+    {
+      "file": "database_2026-11-17T09-58-18-167Z.json",
+      "createdAt": 1794909498172
+    }
+  ],
+  "playlists": {
+    "120363424432229718@g.us": [],
+    "120363405916089835@g.us": [
+      {
+        "song": "https://open.spotify.com/playlist/4lPhx2s93yGR34f56MT2xX?si=V0L3XR4XSeqfk15BusuoLg&utm_source=copy-link&pi=-UXxUslPQ5ac-",
+        "addedBy": "157100693053512@lid",
+        "addedAt": 1793072210385
+      }
+    ]
+  },
+  "placas": {},
+  "favoritos": {},
+  "groups": {
+    "120363405916089835@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "registroAdmin": [
+        {
+          "admin": "174110072111309@lid",
+          "accion": "📢 Hidetag enviado",
+          "fecha": "28/7/2026, 22:25:25",
+          "timestamp": 1785295525254
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "📢 Hidetag enviado",
+          "fecha": "28/7/2026, 22:53:49",
+          "timestamp": 1785297229379
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @256491219120205 expulsado",
+          "fecha": "31/8/2026, 8:43:39",
+          "timestamp": 1788183819808
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "⚠️ Aviso dado a @40520399192150: \"Sin especificar\" (1/3)",
+          "fecha": "31/8/2026, 16:59:30",
+          "timestamp": 1788213570279
+        },
+        {
+          "admin": "85409719652390@lid",
+          "accion": "👑 @85409719652390 promovido a admin",
+          "fecha": "2/9/2026, 10:05:14",
+          "timestamp": 1788361514622
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @100687203561479 expulsado",
+          "fecha": "4/9/2026, 17:08:26",
+          "timestamp": 1788559706550
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @100687203561479 expulsado",
+          "fecha": "4/9/2026, 17:11:37",
+          "timestamp": 1788559897249
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @250761799844032 expulsado",
+          "fecha": "7/9/2026, 13:20:02",
+          "timestamp": 1788805203032
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @114732249968656 expulsado",
+          "fecha": "7/9/2026, 21:29:57",
+          "timestamp": 1788834597858
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @40520399192150 expulsado",
+          "fecha": "7/9/2026, 21:30:09",
+          "timestamp": 1788834609723
+        },
+        {
+          "admin": "14886943883518@lid",
+          "accion": "👋 @154585201148083 expulsado",
+          "fecha": "8/9/2026, 16:45:08",
+          "timestamp": 1788903908681
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @47868182266110 expulsado",
+          "fecha": "10/10/2026, 0:28:29",
+          "timestamp": 1791610109808
+        },
+        {
+          "admin": "271627187126327@lid",
+          "accion": "❌ @174110072111309 removido como admin",
+          "fecha": "16/10/2026, 8:43:09",
+          "timestamp": 1792158189690
+        },
+        {
+          "admin": "271627187126327@lid",
+          "accion": "👑 @174110072111309 promovido a admin",
+          "fecha": "16/10/2026, 8:43:18",
+          "timestamp": 1792158198786
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "⚠️ Aviso dado a @49126574162053: \"Sin especificar\" (1/3)",
+          "fecha": "19/10/2026, 14:31:55",
+          "timestamp": 1792438315080
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "🧹 .kickall ejecutado: 0 miembros expulsados",
+          "fecha": "21/10/2026, 10:46:28",
+          "timestamp": 1792597589075
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "📢 Hidetag enviado",
+          "fecha": "24/10/2026, 12:31:59",
+          "timestamp": 1792863119731
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @50650817786093 expulsado",
+          "fecha": "27/10/2026, 10:47:08",
+          "timestamp": 1793116028465
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "🔒 Grupo cerrado",
+          "fecha": "27/10/2026, 13:30:15",
+          "timestamp": 1793125815023
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "🔓 Grupo abierto",
+          "fecha": "27/10/2026, 13:30:33",
+          "timestamp": 1793125833737
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @276966099955801 expulsado",
+          "fecha": "28/10/2026, 16:27:18",
+          "timestamp": 1793222838301
+        },
+        {
+          "admin": "62681591640199@lid",
+          "accion": "👋 @224597244928138 expulsado",
+          "fecha": "30/10/2026, 20:57:46",
+          "timestamp": 1793411866303
+        },
+        {
+          "admin": "62681591640199@lid",
+          "accion": "⚠️ Aviso dado a @1916025225342: \"Sin especificar\" (1/3)",
+          "fecha": "31/10/2026, 10:47:34",
+          "timestamp": 1793461654341
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @122978067034201 expulsado",
+          "fecha": "6/11/2026, 15:34:46",
+          "timestamp": 1793997286051
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👑 @117300506153209 promovido a admin",
+          "fecha": "6/11/2026, 16:04:44",
+          "timestamp": 1793999085029
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "❌ @117300506153209 removido como admin",
+          "fecha": "6/11/2026, 16:06:45",
+          "timestamp": 1793999205219
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👑 @117300506153209 promovido a admin",
+          "fecha": "6/11/2026, 16:11:00",
+          "timestamp": 1793999460065
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @119198999154912 expulsado",
+          "fecha": "9/11/2026, 23:20:17",
+          "timestamp": 1794284417435
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👑 @87510764007656 promovido a admin",
+          "fecha": "9/11/2026, 23:58:04",
+          "timestamp": 1794286684192
+        },
+        {
+          "admin": "271627187126327@lid",
+          "accion": "🔒 Grupo cerrado",
+          "fecha": "10/11/2026, 0:04:22",
+          "timestamp": 1794287063025
+        },
+        {
+          "admin": "271627187126327@lid",
+          "accion": "🔓 Grupo abierto",
+          "fecha": "10/11/2026, 0:04:46",
+          "timestamp": 1794287086604
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👋 @64416724848722 expulsado",
+          "fecha": "10/11/2026, 20:27:33",
+          "timestamp": 1794360453283
+        }
+      ],
+      "roles": {},
+      "modoadmin": true,
+      "name": "𝗚𝗥𝗨𝗣𝗢 𝗗𝗘 𝗠𝗢𝗕𝗜𝗟𝗔𝗗𝗢𝗥 𝗙𝗙𝗭🌪️",
+      "nombre": "𝗚𝗥𝗨𝗣𝗢 𝗗𝗘 𝗠𝗢𝗕𝗜𝗟𝗔𝗗𝗢𝗥 𝗙𝗙𝗭🌪️",
+      "updatedAt": 1794287086757,
+      "advertencias": {
+        "40520399192150@lid": [
+          {
+            "razon": "Sin especificar",
+            "admin": "174110072111309@lid",
+            "fecha": "31/8/2026, 16:59:30",
+            "timestamp": 1788213570278
+          }
+        ],
+        "49126574162053@lid": [
+          {
+            "razon": "Sin especificar",
+            "admin": "174110072111309@lid",
+            "fecha": "19/10/2026, 14:31:54",
+            "timestamp": 1792438315079
+          }
+        ],
+        "1916025225342@lid": [
+          {
+            "razon": "Sin especificar",
+            "admin": "62681591640199@lid",
+            "fecha": "31/10/2026, 10:47:34",
+            "timestamp": 1793461654341
+          }
+        ]
+      },
+      "afk": {},
+      "welcomeText": "{user} Todo mapeador esta en el link del perfil, te recomiendo leer las reglas",
+      "welcomeImage": null,
+      "welcomeImageMime": null,
+      "welcomeEnabled": true
+    },
+    "129481033429245@lid": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {}
+    },
+    "120363411373351947@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "Among us",
+      "nombre": "Among us",
+      "updatedAt": 1793461541448,
+      "afk": {}
+    },
+    "120363432539567005@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "ZENITRAK",
+      "nombre": "ZENITRAK",
+      "updatedAt": 1793461540561,
+      "muteados": {},
+      "registroAdmin": [
+        {
+          "admin": "157501416853581@lid",
+          "accion": "🔇 @256267998244906 silenciado por 60 minuto(s)",
+          "fecha": "13/10/2026, 12:46:27",
+          "timestamp": 1791913587578
+        },
+        {
+          "admin": "157501416853581@lid",
+          "accion": "🔊 @256267998244906 desilenciado",
+          "fecha": "13/10/2026, 12:47:24",
+          "timestamp": 1791913644415
+        },
+        {
+          "admin": "157501416853581@lid",
+          "accion": "🔇 @27698982338789 silenciado por 60 minuto(s)",
+          "fecha": "13/10/2026, 15:41:15",
+          "timestamp": 1791924075861
+        },
+        {
+          "admin": "157501416853581@lid",
+          "accion": "🔊 @27698982338789 desilenciado",
+          "fecha": "13/10/2026, 15:41:46",
+          "timestamp": 1791924106050
+        }
+      ],
+      "afk": {}
+    },
+    "120363411546308034@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "𝙎𝙤𝙥𝙤𝙧𝙩𝙚 𝙂𝙤𝙣𝙭!𝙩𝙖 𝘽𝙤𝙩",
+      "nombre": "𝙎𝙤𝙥𝙤𝙧𝙩𝙚 𝙂𝙤𝙣𝙭!𝙩𝙖 𝘽𝙤𝙩",
+      "updatedAt": 1793461539605,
+      "afk": {}
+    },
+    "174110072111309@lid": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {}
+    },
+    "status@broadcast": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {}
+    },
+    "120363412949708969@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "Tati",
+      "nombre": "Tati",
+      "updatedAt": 1793461538647,
+      "registroAdmin": [
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👑 @174110072111309 promovido a admin",
+          "fecha": "18/10/2026, 21:35:18",
+          "timestamp": 1792377318660
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "🔇 @29919446847492 silenciado por 1 minuto(s)",
+          "fecha": "21/10/2026, 23:35:48",
+          "timestamp": 1792643748872
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "🔊 @29919446847492 desilenciado",
+          "fecha": "21/10/2026, 23:36:06",
+          "timestamp": 1792643766817
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "❌ @278636036943947 removido como admin",
+          "fecha": "14/11/2026, 19:29:29",
+          "timestamp": 1794702569780
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👑 @278636036943947 promovido a admin",
+          "fecha": "14/11/2026, 19:29:40",
+          "timestamp": 1794702580255
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👑 @174110072111309 promovido a admin",
+          "fecha": "14/11/2026, 19:29:45",
+          "timestamp": 1794702585134
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "❌ @278636036943947 removido como admin",
+          "fecha": "14/11/2026, 19:29:49",
+          "timestamp": 1794702589383
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "❌ @29919446847492 removido como admin",
+          "fecha": "14/11/2026, 19:29:55",
+          "timestamp": 1794702595505
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "🔇 @29919446847492 silenciado por 1 minuto(s)",
+          "fecha": "14/11/2026, 19:57:20",
+          "timestamp": 1794704240963
+        },
+        {
+          "admin": "174110072111309@lid",
+          "accion": "🔇 @278636036943947 silenciado por 1 minuto(s)",
+          "fecha": "14/11/2026, 19:58:09",
+          "timestamp": 1794704289690
+        },
+        {
+          "admin": "193476247482594@lid",
+          "accion": "🔇 @29919446847492 silenciado indefinidamente",
+          "fecha": "14/11/2026, 19:59:43",
+          "timestamp": 1794704383853
+        }
+      ],
+      "muteados": {
+        "29919446847492@lid": "permanent"
+      },
+      "afk": {}
+    },
+    "120363431378278576@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "OUTLAW TEAM",
+      "nombre": "OUTLAW TEAM",
+      "updatedAt": 1793461537879
+    },
+    "120363430810423963@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "OUTLAW TEAM",
+      "nombre": "OUTLAW TEAM",
+      "updatedAt": 1793461544374,
+      "afk": {}
+    },
+    "255829726990412@lid": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {}
+    },
+    "120363410136888297@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "ANUNCIOS NX",
+      "nombre": "ANUNCIOS NX",
+      "updatedAt": 1793461543442,
+      "afk": {}
+    },
+    "120363424913603061@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "afk": {},
+      "name": "SPAM NX",
+      "nombre": "SPAM NX",
+      "updatedAt": 1794285696029,
+      "muteados": {},
+      "registroAdmin": [
+        {
+          "admin": "76296554041459@lid",
+          "accion": "🔇 @196796072620176 silenciado por 60 minuto(s)",
+          "fecha": "1/11/2026, 13:46:42",
+          "timestamp": 1793558802774
+        },
+        {
+          "admin": "76296554041459@lid",
+          "accion": "🔊 @196796072620176 desilenciado",
+          "fecha": "1/11/2026, 13:47:06",
+          "timestamp": 1793558826375
+        }
+      ]
+    },
+    "120363425219138807@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "ҳ̸𝐃𝐘𝐍𝐀𝐒𝐓𝐘 𝐂𝐋𝐀𝐍",
+      "nombre": "ҳ̸𝐃𝐘𝐍𝐀𝐒𝐓𝐘 𝐂𝐋𝐀𝐍",
+      "updatedAt": 1793501728982,
+      "afk": {}
+    },
+    "120363430038399700@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": false,
+      "modoadmin": true,
+      "roles": {},
+      "name": "COMUNIDAD DE LOBO",
+      "nombre": "COMUNIDAD DE LOBO",
+      "updatedAt": 1793930564056,
+      "afk": {}
+    },
+    "120363424432229718@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "Los niñeros de S. Hawking👸🏻",
+      "nombre": "Los niñeros de S. Hawking👸🏻",
+      "updatedAt": 1793998947838,
+      "afk": {}
+    },
+    "120363413156347076@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "name": "MODIFICACIONES⚡️",
+      "nombre": "MODIFICACIONES⚡️",
+      "updatedAt": 1794270817179,
+      "afk": {},
+      "registroAdmin": [
+        {
+          "admin": "174110072111309@lid",
+          "accion": "👑 @174110072111309 promovido a admin",
+          "fecha": "9/11/2026, 23:19:07",
+          "timestamp": 1794284347980
+        }
+      ]
+    },
+    "120363429305582790@g.us": {
+      "disabledCommands": [],
+      "welcome": null,
+      "goodbye": null,
+      "activo": true,
+      "modoadmin": true,
+      "roles": {},
+      "afk": {}
+    }
+  }
+}
