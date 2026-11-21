@@ -9,5 +9,3 @@ sesion_backup_*/
 menu.secret
 sticker-authors.json
 
-# Downloaded commercial music is not part of the bot source
-music_downloads/
